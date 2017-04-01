@@ -1,15 +1,29 @@
 <template>
   <div id="app">
+    <sidebar ref="sidebar" />
     <md-toolbar>
-      <h1 class="md-title">My Title</h1>
+      <md-button class="md-icon-button" @click.native="toggleSidebar">
+        <md-icon>menu</md-icon>
+      </md-button>
+      <h1 class="md-title">Sympa</h1>
     </md-toolbar>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-export default {
+import Sidebar from './layout/Sidebar';
 
+export default {
+  name: 'app',
+  components: {
+    Sidebar,
+  },
+  methods: {
+    toggleSidebar() {
+      this.$refs.sidebar.toggle();
+    },
+  },
 };
 </script>
 
