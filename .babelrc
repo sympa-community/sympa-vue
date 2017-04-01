@@ -4,7 +4,8 @@
       "targets": {
         "browsers": ["last 2 versions"]
       },
-      "modules": false
+      "modules": false,
+      "loose": true
     }]
   ],
   "plugins": ["transform-runtime"]
