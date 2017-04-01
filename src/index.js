@@ -1,7 +1,5 @@
 import Vue from 'vue';
 import VueMaterial from 'vue-material';
-
-// Inject vue-material css
 import 'vue-material/dist/vue-material.css';
 
 import App from '@/components/App.vue';

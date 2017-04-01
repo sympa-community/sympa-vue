@@ -3,40 +3,20 @@ const { addPlugins, createConfig, defineConstants, resolveAliases, env, entryPoi
 const babel = require('@webpack-blocks/babel6');
 const devServer = require('@webpack-blocks/dev-server2');
 const postcss = require('@webpack-blocks/postcss');
+const extractText = require('@webpack-blocks/extract-text2');
+const vue = require('./build/webpack-blocks/vue');
+
 const autoprefixer = require('autoprefixer');
 const path = require('path');
 
 const BabiliPlugin = require('babili-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-/* Define a vue config block. This might go in another module in the future */
-const vue = () => {
-  const setter = context => ({
-    resolve: {
-      extensions: ['.vue'],
-    },
-    module: {
-      loaders: [{
-        test: context.fileType('application/x-vue-component'),
-        loaders: ['vue-loader'],
-      }],
-    },
-  });
-
-  function pre(context) {
-    const registeredTypes = context.fileType.all();
-    if (!('application/x-vue-component' in registeredTypes)) {
-      context.fileType.add('application/x-vue-component', /\.vue$/);
-    }
-  }
-
-  return Object.assign(setter, { pre });
-};
-
 module.exports = createConfig([
   entryPoint('./src/index.js'),
-  setOutput('./dist/bundle.js'),
+  setOutput('./dist/bundle.[hash].js'),
   vue(),
   resolveAliases({ '@': path.resolve('./src') }),
   babel(),
@@ -44,14 +24,14 @@ module.exports = createConfig([
     autoprefixer({ browsers: ['> 1%', 'last 2 versions'] }),
   ]),
   defineConstants({
-    'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
+    'process.env.NODE_ENV': process.env.NODE_ENV || 'development',
   }),
   addPlugins([
     new HtmlWebpackPlugin({ template: './src/index.html' }),
+    new ExtractTextPlugin('css/style.[hash].css'),
   ]),
   env('development', [
     addPlugins([
-      new webpack.HotModuleReplacementPlugin(),
       new webpack.NamedModulesPlugin(),
       new webpack.NoEmitOnErrorsPlugin(),
       new FriendlyErrorsPlugin(),
@@ -62,7 +42,6 @@ module.exports = createConfig([
   env('production', [
     sourceMaps('source-map'),
     addPlugins([
-      new BabiliPlugin(),
       new webpack.LoaderOptionsPlugin({
         minimize: true,
       }),
