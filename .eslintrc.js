@@ -18,7 +18,7 @@ module.exports = {
   'settings': {
     'import/resolver': {
       'webpack': {
-        'config': 'webpack.base.conf.js',
+        'config': 'webpack.config.js',
       },
     },
   },
@@ -27,7 +27,6 @@ module.exports = {
     // don't require .vue extension when importing
     'import/extensions': ['error', 'always', {
       'js': 'never',
-      'vue': 'never',
     }],
     'no-param-reassign': [2, { 'props': false }],
     // allow debugger during development
