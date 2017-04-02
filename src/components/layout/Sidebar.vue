@@ -1,7 +1,9 @@
 <template>
   <md-sidenav class="md-left" ref="sidebar">
     <md-toolbar md-theme="white">
-      <img src="@/assets/logo.svg" alt="">
+      <md-button class="md-icon-button" @click.native="toggleSidebar">
+        <img src="../../assets/logo.svg" alt="">
+      </md-button>
       <h2>SYMPA</h2>
     </md-toolbar>
     <md-divider></md-divider>
