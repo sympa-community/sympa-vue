@@ -1,14 +1,21 @@
 <template>
   <md-sidenav class="md-left" ref="sidebar">
     <md-toolbar md-theme="white">
-      <h3>SYMPA</h3>
+      <img src="@/assets/logo.svg" alt="">
+      <h2>SYMPA</h2>
     </md-toolbar>
     <md-divider></md-divider>
-    <md-list-item>
+    <md-list-item class="md-double-line">
       <md-avatar>
         <img src="//placehold.it/40x40" alt="avatar">
       </md-avatar>
-      <span>John Doe</span>
+      <div class="md-list-text-container">
+        <span>John Doe</span>
+        <span>john.doe@example.com</span>
+      </div>
+      <md-button class="md-icon-button md-list-action">
+        <md-icon>keyboard_arrow_down</md-icon>
+      </md-button>
     </md-list-item>
     <md-divider></md-divider>
     <md-list-item>
@@ -70,6 +77,9 @@ export default {
 
 <style>
 .md-sidenav-content {
-	list-style-type: none;
+  list-style-type: none;
+}
+.md-sidenav-content .md-toolbar h2 {
+  font-weight: 100;
 }
 </style>
