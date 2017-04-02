@@ -1,35 +1,33 @@
 <template>
   <div id="app">
-    <sidebar ref="sidebar" />
-    <md-toolbar>
-      <md-button class="md-icon-button" @click.native="toggleSidebar">
-        <md-icon>menu</md-icon>
-      </md-button>
-      <h1 class="md-title">Sympa</h1>
-    </md-toolbar>
-    <router-view></router-view>
+    <app-shell v-if="logged" />
+    <login-form v-else />
   </div>
 </template>
 
 <script>
 import Vue from 'vue';
+import { mapGetters } from 'vuex';
 
 import router from '@/router';
 import store from '@/store';
 
-import Sidebar from '@/components/layout/Sidebar.vue';
+import AppShell from '@/components/layout/AppShell.vue';
+import LoginForm from '@/components/layout/LoginForm.vue';
 
 // @TODO: Move those imports somewhere else
 Vue.use(require('vue-material/dist/components/mdCore'));
 
 Vue.use(require('vue-material/dist/components/mdAvatar'));
+Vue.use(require('vue-material/dist/components/mdBackdrop'));
 Vue.use(require('vue-material/dist/components/mdButton'));
+Vue.use(require('vue-material/dist/components/mdCard'));
 Vue.use(require('vue-material/dist/components/mdDivider'));
 Vue.use(require('vue-material/dist/components/mdIcon'));
+Vue.use(require('vue-material/dist/components/mdInputContainer'));
 Vue.use(require('vue-material/dist/components/mdList'));
 Vue.use(require('vue-material/dist/components/mdSidenav'));
 Vue.use(require('vue-material/dist/components/mdToolbar'));
-Vue.use(require('vue-material/dist/components/mdBackdrop'));
 
 
 export default {
@@ -37,13 +35,10 @@ export default {
   router,
   store,
   components: {
-    Sidebar,
+    AppShell,
+    LoginForm,
   },
-  methods: {
-    toggleSidebar() {
-      this.$refs.sidebar.toggle();
-    },
-  },
+  computed: mapGetters('auth', ['logged']),
 };
 </script>
 
@@ -52,13 +47,15 @@ export default {
 @import "~vue-material/dist/components/mdCore/index.css";
 
 @import "~vue-material/dist/components/mdAvatar/index.css";
+@import "~vue-material/dist/components/mdBackdrop/index.css";
 @import "~vue-material/dist/components/mdButton/index.css";
+@import "~vue-material/dist/components/mdCard/index.css";
 @import "~vue-material/dist/components/mdDivider/index.css";
 @import "~vue-material/dist/components/mdIcon/index.css";
+@import "~vue-material/dist/components/mdInputContainer/index.css";
 @import "~vue-material/dist/components/mdList/index.css";
 @import "~vue-material/dist/components/mdSidenav/index.css";
 @import "~vue-material/dist/components/mdToolbar/index.css";
-@import "~vue-material/dist/components/mdBackdrop/index.css";
 
 html, body {
   margin: 0;
