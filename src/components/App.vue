@@ -66,6 +66,9 @@ html, body {
 .md-toolbar > .md-title {
   flex: 1;
 }
+.page-content {
+  padding: 25px;
+}
 @media screen and (min-width: 1281px) {
   #app {
     padding-left: 280px;
@@ -75,6 +78,9 @@ html, body {
   }
   .md-toolbar > .md-title {
     padding-left: 25px;
+  }
+  .page-content {
+    padding: 18px 48px;
   }
 }
 </style>

@@ -21,44 +21,44 @@
     </md-list-item>
     <md-divider></md-divider>
     <md-list-item>
-      <router-link to="/">
+      <router-link :to="{name: 'home'}">
         <md-icon>dashboard</md-icon>
         <span>Dashboard</span>
       </router-link>
     </md-list-item>
     <md-list-item>
-      <router-link to="/">
+      <router-link :to="{name: 'discussions'}">
         <md-icon>forum</md-icon>
         <span>Discussions</span>
       </router-link>
     </md-list-item>
     <md-divider></md-divider>
     <md-list-item>
-      <router-link to="/">
+      <router-link :to="{name: 'admin'}">
         <md-icon>work</md-icon>
         <span>Administration</span>
       </router-link>
     </md-list-item>
     <md-list-item>
-      <router-link to="/">
+      <router-link :to="{name: 'listmaster'}">
         <md-icon>list</md-icon>
         <span>Listmaster Admin</span>
       </router-link>
     </md-list-item>
     <md-list-item>
-      <router-link to="/">
+      <router-link :to="{name: 'profile'}">
         <md-icon>person</md-icon>
         <span>Profile</span>
       </router-link>
     </md-list-item>
     <md-list-item>
-      <router-link to="/">
+      <router-link :to="{name: 'settings'}">
         <md-icon>settings</md-icon>
         <span>Settings</span>
       </router-link>
     </md-list-item>
     <md-list-item>
-      <router-link to="/">
+      <router-link :to="{name: 'about'}">
         <md-icon>help</md-icon>
         <span>About/Help</span>
       </router-link>
