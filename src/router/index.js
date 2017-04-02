@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+import Meta from 'vue-meta';
 
 import Home from '@/components/Home.vue';
 import About from '@/components/pages/About.vue';
@@ -10,6 +11,7 @@ import Profile from '@/components/pages/Profile.vue';
 import Settings from '@/components/pages/Settings.vue';
 
 Vue.use(Router);
+Vue.use(Meta);
 
 export default new Router({
   routes: [{

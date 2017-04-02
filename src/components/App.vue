@@ -40,6 +40,12 @@ export default {
     LoginForm,
   },
   computed: mapGetters('auth', ['logged']),
+  metaInfo() {
+    return {
+      title: this.$route.meta.title,
+      titleTemplate: `${((this.$route.meta.title) ? '%s | ' : '')} Sympa`,
+    };
+  },
 };
 </script>
 
