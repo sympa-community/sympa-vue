@@ -1,4 +1,13 @@
 language: node_js
 node_js:
-  - 4
   - 6
+
+deploy:
+  provider: surge
+  project: ./dist/
+  domain: sympa-vue.surge.sh
+  on: master
+
+script:
+  - npm test
+  - npm run build
