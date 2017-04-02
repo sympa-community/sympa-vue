@@ -29,6 +29,7 @@ Vue.use(require('vue-material/dist/components/mdIcon'));
 Vue.use(require('vue-material/dist/components/mdList'));
 Vue.use(require('vue-material/dist/components/mdSidenav'));
 Vue.use(require('vue-material/dist/components/mdToolbar'));
+Vue.use(require('vue-material/dist/components/mdBackdrop'));
 
 
 export default {
@@ -57,6 +58,7 @@ export default {
 @import "~vue-material/dist/components/mdList/index.css";
 @import "~vue-material/dist/components/mdSidenav/index.css";
 @import "~vue-material/dist/components/mdToolbar/index.css";
+@import "~vue-material/dist/components/mdBackdrop/index.css";
 
 html, body {
   margin: 0;
