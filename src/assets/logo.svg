@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="28.223398mm"
+   height="28.472109mm"
+   viewBox="0 0 100.00416 100.88543"
+   id="svg5460"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="logo.svg">
+  <defs
+     id="defs5462">
+    <filter
+       inkscape:collect="always"
+       id="filter5657"
+       x="-0.12402586"
+       width="1.2480516"
+       y="-0.19771366"
+       height="1.3954273">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="3.8549417"
+         id="feGaussianBlur5659" />
+    </filter>
+    <clipPath
+       id="clipPath">
+      <path
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cscsc"
+         id="path24628"
+         d="m 1055.6321,-603.95983 c 0,0 -1.2921,-2.77272 -39.9143,8.94717 -38.60918,11.71595 -37.25308,15.24809 -37.25308,15.24809 0,0 41.64038,17.6367 49.06528,15.93106 5.5132,-1.26652 28.1021,-40.12632 28.1021,-40.12632 z"
+         style="fill:#ff1b1b;fill-opacity:1;fill-rule:evenodd;stroke:#ff1b1b;stroke-width:2.15774751;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:export-filename="/www/home/htmlssl/wikitest/lib/tpl/sympa/images/sympa_logo.png"
+         inkscape:export-xdpi="44.923401"
+         inkscape:export-ydpi="44.923401" />
+    </clipPath>
+    <filter
+       y="-0.5"
+       x="-0.5"
+       width="2"
+       height="2"
+       id="filter">
+      <feGaussianBlur
+         id="feGaussianBlur42455"
+         stdDeviation="1.0" />
+    </filter>
+    <clipPath
+       id="clipPathC">
+      <path
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cscsc"
+         id="path24616"
+         d="m 1036.0226,-476.29555 c 0,0 -2.087,2.23647 -35.1833,-20.8647 -33.08518,-23.0934 -30.70218,-26.03217 -30.70218,-26.03217 0,0 45.05478,-3.87872 51.58678,0.0418 4.8503,2.91114 14.2987,46.85507 14.2987,46.85507 z"
+         style="fill:#c9e235;fill-opacity:1;fill-rule:evenodd;stroke:#c9e235;stroke-width:2.15774751;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:export-filename="/www/home/htmlssl/wikitest/lib/tpl/sympa/images/sympa_logo.png"
+         inkscape:export-xdpi="44.923401"
+         inkscape:export-ydpi="44.923401" />
+    </clipPath>
+    <filter
+       id="filterD"
+       height="2"
+       width="2"
+       x="-0.5"
+       y="-0.5">
+      <feGaussianBlur
+         stdDeviation="1.0"
+         id="feGaussianBlur42718" />
+    </filter>
+    <clipPath
+       id="clipPath7">
+      <path
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cscsc"
+         id="path2601"
+         d="m 1075.9911,-600.72896 c 0,0 2.087,-2.23648 35.1833,20.86469 33.0852,23.09339 30.7022,26.03216 30.7022,26.03216 0,0 -45.0547,3.87873 -51.5868,-0.0418 -4.8502,-2.91114 -14.2987,-46.85506 -14.2987,-46.85506 z"
+         style="fill:#78e5fb;fill-opacity:1;fill-rule:evenodd;stroke:#78e5fb;stroke-width:2.15774751;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:export-filename="/tmp/enveloppes.png"
+         inkscape:export-xdpi="150.12862"
+         inkscape:export-ydpi="150.12862" />
+    </clipPath>
+    <filter
+       y="-0.5"
+       x="-0.5"
+       width="2"
+       height="2"
+       id="filterN">
+      <feGaussianBlur
+         id="feGaussianBlur5294"
+         stdDeviation="1.0" />
+    </filter>
+    <clipPath
+       id="clipPathP">
+      <path
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cscsc"
+         id="path24620"
+         d="m 1057.0243,-472.77416 c 0,0 1.2921,2.77273 39.9144,-8.94713 38.6091,-11.71597 37.253,-15.24811 37.253,-15.24811 0,0 -41.6404,-17.63669 -49.0653,-15.93107 -5.5132,1.26653 -28.1021,40.12631 -28.1021,40.12631 z"
+         style="fill:#ed8029;fill-opacity:1;fill-rule:evenodd;stroke:#ed8029;stroke-width:2.15774751;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:export-filename="/tmp/enveloppes.png"
+         inkscape:export-xdpi="150.12862"
+         inkscape:export-ydpi="150.12862" />
+    </clipPath>
+    <filter
+       id="filteru"
+       height="2"
+       width="2"
+       x="-0.5"
+       y="-0.5">
+      <feGaussianBlur
+         stdDeviation="1.0"
+         id="feGaussianBlur6194" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="55.353822"
+     inkscape:cy="50.578964"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="-2.5"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1366"
+     inkscape:window-height="747"
+     inkscape:window-x="0"
+     inkscape:window-y="21"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5465">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(262.13413,-605.31803)">
+    <g
+       inkscape:export-ydpi="57.279758"
+       inkscape:export-xdpi="57.279758"
+       inkscape:export-filename="/www/home/htmlssl/wiki/data/media/documents_partages/logos/sympa/favicon_sympa.png"
+       id="g5043"
+       style="fill:#ffffff;fill-opacity:1"
+       transform="matrix(-1.6573124,-0.2630051,-0.2630051,1.6573124,1165.4681,1943.7403)">
+      <g
+         inkscape:export-ydpi="57.279758"
+         inkscape:export-xdpi="57.279758"
+         inkscape:export-filename="/www/home/htmlssl/wikitest/lib/tpl/sympa/images/favicon.ico.png"
+         transform="matrix(0.3333977,-2.8349826e-4,-2.8346212e-4,0.3351392,578.45208,-441.14723)"
+         id="g5105">
+        <path
+           inkscape:connector-curvature="0"
+           inkscape:export-ydpi="57.279758"
+           inkscape:export-xdpi="57.279758"
+           inkscape:export-filename="/www/home/htmlssl/wikitest/lib/tpl/sympa/images/favicon.ico.png"
+           style="opacity:0.8;fill:#372d2d;fill-opacity:1;fill-rule:evenodd;stroke:#372d2d;stroke-width:2.15774751;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter5657)"
+           d="m 1069.0875,-595.43906 c 0,0 2.0871,-2.23647 35.1834,20.8647 33.0851,23.0934 30.7022,26.03217 30.7022,26.03217 0,0 -45.0548,3.87872 -51.5869,-0.0418 -4.8502,-2.91114 -14.2987,-46.85507 -14.2987,-46.85507 z"
+           id="path5047"
+           sodipodi:nodetypes="cscsc"
+           transform="matrix(1.0353536,-0.04661417,-0.04661417,1.3216928,-61.534412,200.2903)" />
+        <path
+           inkscape:connector-curvature="0"
+           inkscape:export-ydpi="57.279758"
+           inkscape:export-xdpi="57.279758"
+           inkscape:export-filename="/www/home/htmlssl/wikitest/lib/tpl/sympa/images/favicon.ico.png"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ff1b1b;stroke-width:2.36724305;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1"
+           d="m 985.03762,-620.00792 65.61118,-28.51145 c 6.2147,-2.70074 12.0777,-1.03475 13.1453,3.73545 l 11.2103,50.09239 c 1.0675,4.77021 -3.0764,10.78472 -9.2915,13.48547 l -68.19671,29.63508 c -5.44311,2.19848 -10.37905,-0.81821 -10.87937,-6.28731 l -10.8906,-48.66416 c -1.06756,-4.7702 3.07638,-10.78471 9.2914,-13.48547 z"
+           id="path5065"
+           sodipodi:nodetypes="ccccccccc" />
+        <path
+           inkscape:connector-curvature="0"
+           inkscape:export-ydpi="57.279758"
+           inkscape:export-xdpi="57.279758"
+           inkscape:export-filename="/www/home/htmlssl/wikitest/lib/tpl/sympa/images/favicon.ico.png"
+           style="fill:#ff1b1b;fill-opacity:1;fill-rule:evenodd;stroke:#ff1b1b;stroke-width:2.5221169;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 1059.5712,-647.16653 c 0,0 -1.2086,-3.60446 -41.7425,13.68598 -40.52029,17.28463 -39.28089,21.88982 -39.28089,21.88982 0,0 42.29039,21.36927 50.05729,18.76883 5.7672,-1.93095 30.9661,-54.34463 30.9661,-54.34463 z"
+           id="path5067"
+           sodipodi:nodetypes="cscsc" />
+        <path
+           inkscape:connector-curvature="0"
+           inkscape:export-ydpi="57.279758"
+           inkscape:export-xdpi="57.279758"
+           inkscape:export-filename="/www/home/htmlssl/wikitest/lib/tpl/sympa/images/favicon.ico.png"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#d1ec29;stroke-width:2.36724305;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1"
+           d="m 970.85376,-526.41871 53.56084,47.42331 c 5.0734,4.49209 11.1638,4.72304 13.6559,0.51773 l 26.1677,-44.16074 c 2.4919,-4.20533 0.4136,-11.20728 -4.66,-15.69948 l -55.6714,-49.29217 c -4.4951,-3.77563 -10.12244,-2.43527 -12.29142,2.61024 l -25.42154,42.90165 c -2.49184,4.20536 -0.41356,11.20728 4.65992,15.69946 z"
+           id="path5069"
+           sodipodi:nodetypes="ccccccccc" />
+        <path
+           inkscape:connector-curvature="0"
+           inkscape:export-ydpi="57.279758"
+           inkscape:export-xdpi="57.279758"
+           inkscape:export-filename="/www/home/htmlssl/wikitest/lib/tpl/sympa/images/favicon.ico.png"
+           style="fill:#b1ca12;fill-opacity:1;fill-rule:evenodd;stroke:#d1ec29;stroke-width:2.52265263;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 1033.3174,-477.51948 c 0,0 -2.265,3.05322 -35.45452,-25.93668 -33.17839,-28.98015 -30.57415,-32.97539 -30.57415,-32.97539 0,0 46.82847,-7.22666 53.40867,-2.34942 4.886,3.62154 12.62,61.26149 12.62,61.26149 z"
+           id="path5071"
+           sodipodi:nodetypes="cscsc" />
+        <g
+           clip-path="url(#clipPath)"
+           id="g5073"
+           inkscape:export-filename="/www/home/htmlssl/wikitest/lib/tpl/sympa/images/favicon.ico.png"
+           inkscape:export-xdpi="57.279758"
+           inkscape:export-ydpi="57.279758"
+           transform="matrix(1.0353536,-0.04661417,-0.04661417,1.3216928,-61.534412,200.2903)">
+          <g
+             id="g5075">
+            <path
+               inkscape:connector-curvature="0"
+               inkscape:export-ydpi="44.923401"
+               inkscape:export-xdpi="44.923401"
+               inkscape:export-filename="/www/home/htmlssl/wikitest/lib/tpl/sympa/images/sympa_logo.png"
+               style="fill:none;stroke:#ffffff;stroke-width:10;stroke-opacity:1;filter:url(#filter)"
+               d="m 978.46472,-579.76457 c 0,0 41.64038,17.6367 49.06528,15.93106"
+               id="path5077"
+               sodipodi:nodetypes="cscsc" />
+          </g>
+        </g>
+        <g
+           id="g5079"
+           clip-path="url(#clipPathC)"
+           inkscape:export-filename="/www/home/htmlssl/wikitest/lib/tpl/sympa/images/favicon.ico.png"
+           inkscape:export-xdpi="57.279758"
+           inkscape:export-ydpi="57.279758"
+           transform="matrix(1.0353536,-0.04661417,-0.04661417,1.3216928,-61.534412,200.2903)">
+          <g
+             id="g5081">
+            <path
+               inkscape:connector-curvature="0"
+               inkscape:export-ydpi="44.923401"
+               inkscape:export-xdpi="44.923401"
+               inkscape:export-filename="/www/home/htmlssl/wikitest/lib/tpl/sympa/images/sympa_logo.png"
+               style="fill:none;stroke:#ffffff;stroke-width:10;stroke-opacity:1;filter:url(#filterD)"
+               d="m 1021.7239,-523.15062 c 4.8503,2.91114 14.2987,46.85507 14.2987,46.85507"
+               id="path5083"
+               sodipodi:nodetypes="cscsc" />
+          </g>
+        </g>
+        <path
+           inkscape:connector-curvature="0"
+           inkscape:export-ydpi="57.279758"
+           inkscape:export-xdpi="57.279758"
+           inkscape:export-filename="/www/home/htmlssl/wikitest/lib/tpl/sympa/images/favicon.ico.png"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#72e7ff;stroke-width:2.36724305;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1"
+           d="m 1142.963,-594.94612 -53.5608,-47.42329 c -5.0734,-4.49212 -11.1639,-4.72305 -13.656,-0.51774 l -26.1676,44.16073 c -2.492,4.20534 -0.4137,11.20729 4.6599,15.69949 l 55.6715,49.29217 c 4.4951,3.7756 10.1224,2.43526 12.2914,-2.61025 l 25.4215,-42.90165 c 2.4919,-4.20534 0.4136,-11.20728 -4.6599,-15.69946 z"
+           id="path5085"
+           sodipodi:nodetypes="ccccccccc" />
+        <path
+           inkscape:connector-curvature="0"
+           inkscape:export-ydpi="57.279758"
+           inkscape:export-xdpi="57.279758"
+           inkscape:export-filename="/www/home/htmlssl/wikitest/lib/tpl/sympa/images/favicon.ico.png"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ae5106;stroke-width:2.36724305;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1"
+           d="m 1129.431,-501.00285 -65.6111,28.51143 c -6.2148,2.70076 -12.0777,1.03478 -13.1454,-3.73545 l -11.2101,-50.09236 c -1.0677,-4.77021 3.0762,-10.78472 9.2914,-13.48548 l 68.1967,-29.63508 c 5.4431,-2.19848 10.3792,0.81823 10.8793,6.28728 l 10.8906,48.66416 c 1.0676,4.77025 -3.0763,10.78475 -9.2914,13.4855 z"
+           id="path5087"
+           sodipodi:nodetypes="ccccccccc" />
+        <path
+           inkscape:connector-curvature="0"
+           inkscape:export-ydpi="57.279758"
+           inkscape:export-xdpi="57.279758"
+           inkscape:export-filename="/www/home/htmlssl/wikitest/lib/tpl/sympa/images/favicon.ico.png"
+           style="fill:#ae5106;fill-opacity:1;fill-rule:evenodd;stroke:#ae5106;stroke-width:2.5221169;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 1054.8975,-473.84425 c 0,0 1.2085,3.60445 41.7426,-13.68594 40.5202,-17.28465 39.2808,-21.88984 39.2808,-21.88984 0,0 -42.2904,-21.36926 -50.0574,-18.76884 -5.7671,1.93095 -30.966,54.34462 -30.966,54.34462 z"
+           id="path5089"
+           sodipodi:nodetypes="cscsc" />
+        <path
+           inkscape:connector-curvature="0"
+           inkscape:export-ydpi="57.279758"
+           inkscape:export-xdpi="57.279758"
+           inkscape:export-filename="/www/home/htmlssl/wikitest/lib/tpl/sympa/images/favicon.ico.png"
+           style="fill:#72e7ff;fill-opacity:1;fill-rule:evenodd;stroke:#72e7ff;stroke-width:2.5221169;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 1080.4993,-643.84533 c 0,0 2.2651,-3.05322 35.4546,25.93667 33.1784,28.98013 30.5741,32.97536 30.5741,32.97536 0,0 -46.8283,7.22668 -53.4085,2.34945 -4.886,-3.62156 -12.6202,-61.26148 -12.6202,-61.26148 z"
+           id="path5091"
+           sodipodi:nodetypes="cscsc" />
+        <g
+           inkscape:export-ydpi="57.279758"
+           inkscape:export-xdpi="57.279758"
+           inkscape:export-filename="/www/home/htmlssl/wikitest/lib/tpl/sympa/images/favicon.ico.png"
+           clip-path="url(#clipPath7)"
+           id="g5093"
+           transform="matrix(1.0353536,-0.04661417,-0.04661417,1.3216928,-61.534412,200.2903)">
+          <g
+             id="g5095">
+            <path
+               inkscape:connector-curvature="0"
+               inkscape:export-ydpi="150.12862"
+               inkscape:export-xdpi="150.12862"
+               inkscape:export-filename="/tmp/enveloppes.png"
+               style="fill:none;stroke:#ffffff;stroke-width:10;stroke-opacity:1;filter:url(#filterN)"
+               d="m 1090.2898,-553.8739 c -4.8502,-2.91114 -14.2987,-46.85506 -14.2987,-46.85506"
+               id="path5097"
+               sodipodi:nodetypes="cscsc" />
+          </g>
+        </g>
+        <g
+           inkscape:export-ydpi="57.279758"
+           inkscape:export-xdpi="57.279758"
+           inkscape:export-filename="/www/home/htmlssl/wikitest/lib/tpl/sympa/images/favicon.ico.png"
+           id="g5099"
+           clip-path="url(#clipPathP)"
+           transform="matrix(1.0353536,-0.04661417,-0.04661417,1.3216928,-61.534412,200.2903)">
+          <g
+             id="g5101">
+            <path
+               inkscape:connector-curvature="0"
+               inkscape:export-ydpi="150.12862"
+               inkscape:export-xdpi="150.12862"
+               inkscape:export-filename="/tmp/enveloppes.png"
+               style="fill:none;stroke:#ffffff;stroke-width:10;stroke-opacity:1;filter:url(#filteru)"
+               d="m 1134.1917,-496.9694 c 0,0 -41.6404,-17.63669 -49.0653,-15.93107"
+               id="path5103"
+               sodipodi:nodetypes="cscsc" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
