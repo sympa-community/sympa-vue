@@ -10,7 +10,9 @@
         <md-icon>more_vert</md-icon>
       </md-button>
     </md-toolbar>
-    <router-view></router-view>
+    <section class="page-content">
+      <router-view></router-view>
+    </section>
   </main>
 </template>
 
@@ -40,12 +42,6 @@ export default {
 @media screen and (min-width: 1281px) {
   #app {
     padding-left: 280px;
-  }
-  .hamburger {
-    display: none;
-  }
-  .md-toolbar > .md-title {
-    padding-left: 25px;
   }
   .page-content {
     padding: 18px 48px;

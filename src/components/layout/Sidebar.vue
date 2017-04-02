@@ -1,9 +1,7 @@
 <template>
   <md-sidenav class="md-left" ref="sidebar">
     <md-toolbar md-theme="white">
-      <md-button class="md-icon-button" @click.native="toggleSidebar">
-        <img src="../../assets/logo.svg" alt="">
-      </md-button>
+      <img src="../../assets/logo.svg" alt="">
       <h2>SYMPA</h2>
     </md-toolbar>
     <md-divider></md-divider>
@@ -12,8 +10,8 @@
         <img src="//placehold.it/40x40" alt="avatar">
       </md-avatar>
       <div class="md-list-text-container">
-        <span>John Doe</span>
-        <span>john.doe@example.com</span>
+        <b>{{ fullname }}</b>
+        <span>{{ email }}</span>
       </div>
       <md-button class="md-icon-button md-list-action">
         <md-icon>keyboard_arrow_down</md-icon>
@@ -67,6 +65,8 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
   name: 'sidebar',
   methods: {
@@ -74,16 +74,41 @@ export default {
       this.$refs.sidebar.toggle();
     },
   },
+  computed: mapGetters('auth', ['fullname', 'email']),
 };
 </script>
 
 <style>
-.md-sidenav-content {
-  list-style-type: none;
+.md-list-item .md-list-item-container {
+  font-weight: 500;
+  color: #4F4F4F;
+  font-size: 15px;
+  line-height: 48px;
 }
+
+.md-divider {
+  margin: 8px 0;
+}
+
+.md-sidenav .md-sidenav-content {
+  list-style-type: none;
+  width: 280px;
+}
+
+.md-sidenav-content .md-toolbar img {
+  height: 32px;
+  width: 32px;
+  margin: 16px;
+}
+
+.md-sidenav-content .md-toolbar + .md-divider {
+  margin-top: 0;
+}
+
 .md-sidenav-content .md-toolbar h2 {
   font-weight: 100;
 }
+
 @media screen and (min-width: 1281px) {
   .md-sidenav-content {
     transform: translate3d(0,0,0) !important;
