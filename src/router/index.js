@@ -20,25 +20,43 @@ export default new Router({
     path: '/about',
     name: 'about',
     component: About,
+    meta: {
+      title: 'About/Help',
+    },
   }, {
     path: '/admin',
     name: 'admin',
     component: Admin,
+    meta: {
+      title: 'Administration',
+    },
   }, {
     path: '/discussions',
     name: 'discussions',
     component: Discussions,
+    meta: {
+      title: 'Discussions',
+    },
   }, {
     path: '/listmaster',
     name: 'listmaster',
     component: Listmaster,
+    meta: {
+      title: 'Listmaster Admin',
+    },
   }, {
     path: '/profile',
     name: 'profile',
     component: Profile,
+    meta: {
+      title: 'Profile',
+    },
   }, {
     path: '/settings',
     name: 'settings',
     component: Settings,
+    meta: {
+      title: 'Settings',
+    },
   }],
 });

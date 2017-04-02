@@ -63,24 +63,4 @@ html, body {
   margin: 0;
   padding: 0;
 }
-.md-toolbar > .md-title {
-  flex: 1;
-}
-.page-content {
-  padding: 25px;
-}
-@media screen and (min-width: 1281px) {
-  #app {
-    padding-left: 280px;
-  }
-  .hamburger {
-    display: none;
-  }
-  .md-toolbar > .md-title {
-    padding-left: 25px;
-  }
-  .page-content {
-    padding: 18px 48px;
-  }
-}
 </style>
