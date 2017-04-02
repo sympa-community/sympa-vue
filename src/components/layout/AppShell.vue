@@ -6,6 +6,9 @@
         <md-icon>menu</md-icon>
       </md-button>
       <h1 class="md-title">Sympa</h1>
+      <md-button class="md-icon-button">
+        <md-icon>more_vert</md-icon>
+      </md-button>
     </md-toolbar>
     <router-view></router-view>
   </main>

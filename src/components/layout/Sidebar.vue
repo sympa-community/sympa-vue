@@ -84,4 +84,14 @@ export default {
 .md-sidenav-content .md-toolbar h2 {
   font-weight: 100;
 }
+@media screen and (min-width: 1281px) {
+  .md-sidenav-content {
+    transform: translate3d(0,0,0) !important;
+    pointer-events: auto !important;
+    box-shadow: 0 1px 5px rgba(0,0,0,.25) !important;
+  }
+  .md-sidenav-backdrop {
+    display: none;
+  }
+}
 </style>

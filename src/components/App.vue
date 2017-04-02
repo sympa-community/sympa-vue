@@ -25,6 +25,7 @@ Vue.use(require('vue-material/dist/components/mdCard'));
 Vue.use(require('vue-material/dist/components/mdDivider'));
 Vue.use(require('vue-material/dist/components/mdIcon'));
 Vue.use(require('vue-material/dist/components/mdInputContainer'));
+Vue.use(require('vue-material/dist/components/mdLayout'));
 Vue.use(require('vue-material/dist/components/mdList'));
 Vue.use(require('vue-material/dist/components/mdSidenav'));
 Vue.use(require('vue-material/dist/components/mdToolbar'));
@@ -53,6 +54,7 @@ export default {
 @import "~vue-material/dist/components/mdDivider/index.css";
 @import "~vue-material/dist/components/mdIcon/index.css";
 @import "~vue-material/dist/components/mdInputContainer/index.css";
+@import "~vue-material/dist/components/mdLayout/index.css";
 @import "~vue-material/dist/components/mdList/index.css";
 @import "~vue-material/dist/components/mdSidenav/index.css";
 @import "~vue-material/dist/components/mdToolbar/index.css";
@@ -60,5 +62,19 @@ export default {
 html, body {
   margin: 0;
   padding: 0;
+}
+.md-toolbar > .md-title {
+  flex: 1;
+}
+@media screen and (min-width: 1281px) {
+  #app {
+    padding-left: 280px;
+  }
+  .hamburger {
+    display: none;
+  }
+  .md-toolbar > .md-title {
+    padding-left: 25px;
+  }
 }
 </style>
