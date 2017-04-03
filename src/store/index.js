@@ -6,7 +6,7 @@ import auth from './auth';
 
 Vue.use(Vuex);
 
-export default new Vuex.Store({
+const store = new Vuex.Store({
   modules: {
     auth,
   },
@@ -14,3 +14,17 @@ export default new Vuex.Store({
     createPersistedState({ paths: ['auth.user'] }),
   ],
 });
+
+if (module.hot) {
+  module.hot.accept(['./auth'], () => {
+    /* eslint-disable global-require */
+    const newAuth = require('./auth').default;
+    store.hotUpdate({
+      modules: {
+        auth: newAuth,
+      },
+    });
+  });
+}
+
+export default store;

@@ -2,5 +2,6 @@ import Vue from 'vue';
 
 import App from '@/components/App.vue';
 
-/* eslint-disable no-new */
-new Vue(App).$mount('#app');
+// Globally register app
+window.app = new Vue(App);
+window.app.$mount('#app');
