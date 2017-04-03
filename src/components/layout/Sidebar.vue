@@ -108,11 +108,6 @@ export default {
   width: 280px;
 }
 
-.md-sidenav-content, .md-list {
-  /* @TODO: move this in the vue-material theme */
-  background-color: #FAFAFA!important;
-}
-
 .md-sidenav-content .md-toolbar img {
   height: 32px;
   width: 32px;
