@@ -17,8 +17,26 @@ export default {
 </script>
 
 <style>
+.grid-item {
+  margin-right: 25px;
+  margin-bottom: 25px;
+  width: 172px;
+  background-color: #de1436;
+  color: #fff;
+}
 .grid-item > img {
   height: 172px;
   width: 172px;
+}
+.grid-item > .content {
+  padding: 16px;
+  font-size: 12px;
+}
+.grid-item .title {
+  font-weight: 500;
+  font-size: 16px;
+}
+.grid-item p {
+  margin: 0;
 }
 </style>
