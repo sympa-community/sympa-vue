@@ -9,7 +9,7 @@
       <md-card-content>
         <md-input-container>
           <label>Username / Email</label>
-          <md-input v-model="username" :disabled="pending" />
+          <md-input type="email" v-model="username" :disabled="pending" />
         </md-input-container>
 
         <md-input-container md-has-password :class="{ 'md-input-invalid': errored }">
