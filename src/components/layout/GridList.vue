@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'grid-item',
+  name: 'grid-list',
 };
 </script>
 
@@ -14,7 +14,6 @@ export default {
 .grid-list {
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 </style>

@@ -25,8 +25,7 @@ export default {
   color: #fff;
 }
 .grid-item > img {
-  height: 172px;
-  width: 172px;
+  width: 100%;
 }
 .grid-item > .content {
   padding: 16px;
@@ -38,5 +37,17 @@ export default {
 }
 .grid-item p {
   margin: 0;
+}
+@media screen and (max-width: 960px) {
+  .grid-item {
+    width: 30%;
+    margin: 2px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .grid-item {
+    width: 49%;
+    margin: 1px;
+  }
 }
 </style>
