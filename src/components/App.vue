@@ -18,6 +18,9 @@ import LoginForm from '@/components/layout/LoginForm.vue';
 // @TODO: Move those imports somewhere else
 Vue.use(require('vue-material/dist/components/mdCore'));
 
+// Disable (for now) ink ripple for performance reasons
+Vue.material.inkRipple = false;
+
 Vue.use(require('vue-material/dist/components/mdAvatar'));
 Vue.use(require('vue-material/dist/components/mdBackdrop'));
 Vue.use(require('vue-material/dist/components/mdButton'));
@@ -68,5 +71,10 @@ export default {
 html, body {
   margin: 0;
   padding: 0;
+}
+
+/* Disable (for now) ink ripple for performance reasons */
+.md-ink-ripple {
+  display: none;
 }
 </style>

@@ -39,7 +39,6 @@ module.exports = createConfig([
     sourceMaps(),
   ]),
   env('production', [
-    entryPoint('webpack-dev-server/client'),
     vue({
       loaders: {
         css: ExtractTextPlugin.extract({

@@ -1,18 +1,20 @@
 <template>
   <main>
     <sidebar ref="sidebar" />
-    <md-toolbar>
-      <md-button class="md-icon-button hamburger" @click.native="toggleSidebar">
-        <md-icon>menu</md-icon>
-      </md-button>
-      <h1 class="md-title">{{ $route.meta.title || "Sympa" }}</h1>
-      <md-button class="md-icon-button">
-        <md-icon>more_vert</md-icon>
-      </md-button>
-    </md-toolbar>
-    <section class="page-content">
-      <router-view></router-view>
-    </section>
+    <div class="main-container">
+      <md-toolbar>
+        <md-button class="md-icon-button hamburger" @click.native="toggleSidebar">
+          <md-icon>menu</md-icon>
+        </md-button>
+        <h1 class="md-title">{{ $route.meta.title || "Sympa" }}</h1>
+        <md-button class="md-icon-button">
+          <md-icon>more_vert</md-icon>
+        </md-button>
+      </md-toolbar>
+      <section class="page-content">
+        <router-view></router-view>
+      </section>
+    </div>
   </main>
 </template>
 
@@ -36,12 +38,19 @@ export default {
 .md-toolbar > .md-title {
   flex: 1;
 }
+
+.main-container {
+  height: 100vh;
+  background-color: #F5F5F5;
+}
+
 .page-content {
   padding: 25px;
 }
+
 @media screen and (min-width: 1281px) {
-  #app {
-    padding-left: 280px;
+  .main-container {
+    margin-left: 280px;
   }
   .page-content {
     padding: 18px 48px;

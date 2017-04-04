@@ -12,9 +12,11 @@
           <md-input v-model="username" :disabled="pending" />
         </md-input-container>
 
-        <md-input-container md-has-password>
+        <md-input-container md-has-password :class="{ 'md-input-invalid': errored }">
           <label>Password</label>
           <md-input type="password" v-model="password" :disabled="pending" />
+
+          <span v-if="errored" class="md-error">{{ errorMessage }}</span>
         </md-input-container>
       </md-card-content>
 

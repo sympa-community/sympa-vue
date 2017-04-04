@@ -2,6 +2,14 @@ language: node_js
 node_js:
   - 6
 
+script:
+  - npm test
+  - npm run build
+
+# See http://surge.sh/help/adding-a-200-page-for-client-side-routing
+before_deploy:
+  - mv ./dist/index.html ./dist/200.html
+
 deploy:
   provider: surge
   project: ./dist/
@@ -9,6 +17,3 @@ deploy:
   on: master
   skip_cleanup: true
 
-script:
-  - npm test
-  - npm run build
