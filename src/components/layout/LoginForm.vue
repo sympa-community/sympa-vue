@@ -1,5 +1,5 @@
 <template>
-  <form @submit.stop.prevent="login">
+  <form @submit.stop.prevent="login" novalidate>
     <md-card>
       <md-card-header>
         <div class="md-title">Login</div>
