@@ -35,7 +35,10 @@ module.exports = createConfig([
       new webpack.NoEmitOnErrorsPlugin(),
       new FriendlyErrorsPlugin(),
     ]),
-    devServer(),
+    devServer({
+      host: '0.0.0.0',
+      disableHostCheck: true,
+    }),
     sourceMaps(),
   ]),
   env('production', [

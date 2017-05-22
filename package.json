@@ -4,7 +4,7 @@
   "description": "Web interface for Sympa",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=development webpack-dev-server",
+    "start": "NODE_ENV=development webpack-dev-server --progress --colors",
     "build": "rm -rf dist/* && NODE_ENV=production webpack -p",
     "test": "npm run test:lint && npm run test:unit",
     "test:lint": "eslint --ext .js,.vue .",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sympa-community/web.git"
+    "url": "git+https://github.com/sympa-community/sympa-vue.git"
   },
   "keywords": [
     "sympa"
@@ -20,9 +20,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sympa-community/web/issues"
+    "url": "https://github.com/sympa-community/sympa-vue/issues"
   },
-  "homepage": "https://github.com/sympa-community/web#readme",
+  "homepage": "https://github.com/sympa-community/sympa-vue#readme",
   "devDependencies": {
     "@webpack-blocks/babel6": "^0.4.1",
     "@webpack-blocks/dev-server2": "^0.4.0",
