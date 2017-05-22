@@ -39,6 +39,7 @@ export default {
 <style>
 .md-backdrop.md-sidenav-backdrop {
   position: fixed;
+  z-index: 99;
 }
 .md-toolbar > .md-title {
   flex: 1;

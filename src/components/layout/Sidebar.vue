@@ -112,6 +112,7 @@ export default {
 .md-sidenav .md-sidenav-content {
   width: 280px;
   position: fixed;
+  z-index: 100;
 }
 
 .md-sidenav-content .md-toolbar img {
