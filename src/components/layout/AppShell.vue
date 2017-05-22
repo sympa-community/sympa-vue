@@ -12,7 +12,9 @@
         </md-button>
       </md-toolbar>
       <section class="page-content">
-        <router-view></router-view>
+        <transition name="fade" appear mode="out-in">
+          <router-view></router-view>
+        </transition>
       </section>
     </div>
   </main>
@@ -35,17 +37,27 @@ export default {
 </script>
 
 <style>
+.md-backdrop.md-sidenav-backdrop {
+  position: fixed;
+}
 .md-toolbar > .md-title {
   flex: 1;
 }
-
 .main-container {
   height: 100vh;
+}
+.page-content {
+  min-height: calc(100vh - 64px);
+  padding: 25px;
   background-color: #F5F5F5;
 }
-
-.page-content {
-  padding: 25px;
+.fade-enter-active, .fade-leave-active {
+  transform: translate3d(0, 0, 0);
+  transition: opacity .2s, transform .2s ease;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+  transform: translate3d(0, 20px, 0)!important;
 }
 
 @media screen and (min-width: 1281px) {

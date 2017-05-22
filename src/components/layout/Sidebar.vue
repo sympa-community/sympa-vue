@@ -89,6 +89,11 @@ export default {
     },
   },
   computed: mapGetters('auth', ['fullname', 'email', 'picture']),
+  watch: {
+    $route() {
+      this.$refs.sidebar.close();
+    },
+  },
 };
 </script>
 
@@ -106,6 +111,7 @@ export default {
 
 .md-sidenav .md-sidenav-content {
   width: 280px;
+  position: fixed;
 }
 
 .md-sidenav-content .md-toolbar img {
