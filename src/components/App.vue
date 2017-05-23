@@ -7,6 +7,8 @@
 
 <script>
 import Vue from 'vue';
+import VueMaterial from 'vue-material';
+
 import { mapGetters } from 'vuex';
 
 import router from '@/router';
@@ -16,22 +18,10 @@ import AppShell from '@/components/layout/AppShell.vue';
 import LoginForm from '@/components/layout/LoginForm.vue';
 
 // @TODO: Move those imports somewhere else
-Vue.use(require('vue-material/dist/components/mdCore'));
+Vue.use(VueMaterial);
 
 // Disable (for now) ink ripple for performance reasons
 Vue.material.inkRipple = false;
-
-Vue.use(require('vue-material/dist/components/mdAvatar'));
-Vue.use(require('vue-material/dist/components/mdBackdrop'));
-Vue.use(require('vue-material/dist/components/mdButton'));
-Vue.use(require('vue-material/dist/components/mdCard'));
-Vue.use(require('vue-material/dist/components/mdDivider'));
-Vue.use(require('vue-material/dist/components/mdIcon'));
-Vue.use(require('vue-material/dist/components/mdInputContainer'));
-Vue.use(require('vue-material/dist/components/mdLayout'));
-Vue.use(require('vue-material/dist/components/mdList'));
-Vue.use(require('vue-material/dist/components/mdSidenav'));
-Vue.use(require('vue-material/dist/components/mdToolbar'));
 
 
 export default {
@@ -54,19 +44,7 @@ export default {
 
 <style>
 /* @TODO: Move those imports somewhere else */
-@import "~vue-material/dist/components/mdCore/index.css";
-
-@import "~vue-material/dist/components/mdAvatar/index.css";
-@import "~vue-material/dist/components/mdBackdrop/index.css";
-@import "~vue-material/dist/components/mdButton/index.css";
-@import "~vue-material/dist/components/mdCard/index.css";
-@import "~vue-material/dist/components/mdDivider/index.css";
-@import "~vue-material/dist/components/mdIcon/index.css";
-@import "~vue-material/dist/components/mdInputContainer/index.css";
-@import "~vue-material/dist/components/mdLayout/index.css";
-@import "~vue-material/dist/components/mdList/index.css";
-@import "~vue-material/dist/components/mdSidenav/index.css";
-@import "~vue-material/dist/components/mdToolbar/index.css";
+@import "~vue-material/dist/vue-material.css";
 
 html, body {
   margin: 0;

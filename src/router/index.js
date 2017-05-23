@@ -6,6 +6,7 @@ import Home from '@/components/Home.vue';
 import About from '@/components/pages/About.vue';
 import Admin from '@/components/pages/Admin.vue';
 import Discussions from '@/components/pages/Discussions.vue';
+import DiscussionsSubscribed from '@/components/pages/DiscussionsSubscribed.vue';
 import Listmaster from '@/components/pages/Listmaster.vue';
 import Profile from '@/components/pages/Profile.vue';
 import Settings from '@/components/pages/Settings.vue';
@@ -37,6 +38,13 @@ export default new Router({
     path: '/discussions',
     name: 'discussions',
     component: Discussions,
+    meta: {
+      title: 'Discussions',
+    },
+  }, {
+    path: '/discussions/subscribed',
+    name: 'discussionsSubscribed',
+    component: DiscussionsSubscribed,
     meta: {
       title: 'Discussions',
     },

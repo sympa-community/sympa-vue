@@ -1,5 +1,5 @@
 {
-  "name": "sympa-web",
+  "name": "sympa-vue",
   "version": "0.0.1",
   "description": "Web interface for Sympa",
   "main": "index.js",
