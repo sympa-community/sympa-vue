@@ -36,6 +36,10 @@
         </md-table-body>
       </md-table>
     </md-table-card>
+    <div>
+      <h2>Selected Data</h2>
+      <pre>{{ selectedData  }}</pre>
+    </div>
   </div>
 </template>
 
@@ -55,9 +59,13 @@ export default {
         address: 'jane.doe@example.com',
       },
     ],
+    selectedData: [],
   }),
   methods: {
-
+    onSelect(data) {
+      this.selectedData = data;
+      this.$forceUpdate();
+    },
   },
 };
 </script>
@@ -66,4 +74,8 @@ export default {
 .form-actions {
   width: 50px;
 }
+.md-table-head {
+  text-transform: uppercase;
+}
 </style>
+
