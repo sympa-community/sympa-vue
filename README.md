@@ -89,6 +89,8 @@ and that's it! You will be aible to send and receive messages using IMAP and SMT
 
 ## Let's use JMAP !
 
+### Get a `continuationToken`
+
 If you did all these things correctly, you will be aible to send a POST request to the `http://localhost/authentication` endpoint.
 
 So you will need to set the following headers :
@@ -119,6 +121,56 @@ and if it's OK, you will have a 200 return like that:
   "prompt": null
 }
 ```
+
+### Get the `accessToken`
+
+To get the accessToken you will need to send a new POST request like before with the same headers, but with the following content:
+
+```json
+{
+  "token": "user01@james.local_2017-05-23T16:59:56.273Z_DMoVfgOk73rQE6PIpZ3bu8A73nDUkZFzZ0r940plo2Ej/AP2S2PfgLSH/oaugafyjohdlO6g+znX+38TA0rjipI/3aTh0q42Vy+tAPccy87sFqeC+tLpJoukN9bhEFOlpPknz6TMyaW/5P7u0gNLYv5qiKvTxUSulOb4/dpmEnt1y+u7SdmAOb/Jt63e9NhWE3YEUz9uUzUXVXcqBX5eJSMBId35f6HnXUu5n+ESFip81cI6r34xX/HDf2+mltTTisQdycH5Trjgh6M5R17SJ06DGJkv6iHBccjY3na+scCaXo0O3hYScm9lKGeL9gXpNOibUoUyjfSixZC0N1sDCA==",
+  "method": "password",
+  "password": "1234"
+}
+```
+
+The `token` field must contain the value of the `continuationToken` got just before, and we need to set the `password` field with the user's password (here: `1234`).
+
+If all is OK, you will get a 201 Created response, with a similar content:
+
+```json
+{
+  "accessToken": "e41c4ec1-cabd-4bec-baa3-b2453b3b2b1d",
+  "api": "/jmap",
+  "eventSource": "/notImplemented",
+  "upload": "/upload",
+  "download": "/download"
+}
+```
+
+And here you have the `accessToken` and differents endpoint for using JMAP.
+
+From now, you will have to add the header `Authorization` to the value of the accessToken got just before.
+
+### Get all differents endpoint
+
+Making a `GET` request at the authentication endpoint with the `Authorization` header set will give you the differents endpoint like before; it can be useful if it changes during the time.. so if at one moment you get a 404 error, it could be nice to run that request to get current endpoints.
+
+It will give you something like that:
+
+```json
+{
+  "api": "/jmap",
+  "eventSource": "/notImplemented",
+  "upload": "/upload",
+  "download": "/download"
+}
+```
+
+### Revoke a token
+
+Just make a `DELETE` request with the `Authorization` header, il will give you a `204` response if it was OK, or a `401` response if it was already revoked or if no `Authorization` header was set.
+
 
 *To be continued...*
 
