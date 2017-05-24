@@ -3,12 +3,14 @@ import Vuex from 'vuex';
 import createPersistedState from 'vuex-persistedstate';
 
 import auth from './auth';
+import jmap from './jmap';
 
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
   modules: {
     auth,
+    jmap,
   },
   plugins: [
     createPersistedState({ paths: ['auth.user'] }),
