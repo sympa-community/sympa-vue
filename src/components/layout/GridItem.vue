@@ -18,6 +18,7 @@ export default {
 
 <style>
 .grid-item {
+  cursor: pointer;
   margin-right: 25px;
   margin-bottom: 25px;
   width: 172px;

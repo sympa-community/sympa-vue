@@ -1,5 +1,7 @@
 export default {
-  mailboxes: null,
+  mailboxes: {
+    list: [],
+  },
   pending: false,
   error: null,
   token: {

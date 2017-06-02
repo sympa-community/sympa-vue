@@ -1,30 +1,19 @@
 <template>
-  <form @submit.stop.prevent="login" novalidate>
-    <md-card>
-      <md-card-header>
-        <div class="md-title">Login</div>
-        <div class="md-subtitle">Tip: try <code>username</code> / <code>password</code></div>
-      </md-card-header>
-
-      <md-card-content>
-        <md-input-container>
-          <label>Username / Email</label>
-          <md-input type="email" v-model="username" :disabled="pending" />
-        </md-input-container>
-
-        <md-input-container md-has-password :class="{ 'md-input-invalid': errored }">
-          <label>Password</label>
-          <md-input type="password" v-model="password" :disabled="pending" />
-
-          <span v-if="errored" class="md-error">{{ errorMessage }}</span>
-        </md-input-container>
-      </md-card-content>
-
-      <md-card-actions>
-        <md-button type="submit" class="md-primary" :disabled="pending">Login</md-button>
-      </md-card-actions>
-
-    </md-card>
+  <form @submit.top.prevent="login" novalidate>
+    <div class="mdl-card">
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">Login</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <p>Tip: try <code>username</code> / <code>password</code></p>
+        <mdl-textfield floating-label="Username / Email" v-model="username" :disabled="pending" :class="{ 'is-invalid': errored }"></mdl-textfield>
+        <mdl-textfield type="password" floating-label="Password" v-model="password" :disabled="pending" :class="{ 'is-invalid': errored }"></mdl-textfield>
+        <span v-if="errored" class="md-error">{{ errorMessage }}</span>
+      </div>
+      <div class="mdl_card__actions">
+        <mdl-button colored type="submit" :disabled="pending">Login</mdl-button>
+      </div>
+    </div>
   </form>
 </template>
 
@@ -33,9 +22,10 @@ import { mapGetters } from 'vuex';
 
 export default {
   name: 'login-form',
-  data() {
-    return { username: '', password: '' };
-  },
+  data: () => ({
+    username: '',
+    password: '',
+  }),
   methods: {
     login() {
       this.$store.dispatch('auth/login', {

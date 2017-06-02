@@ -64,7 +64,9 @@ export function LOGOUT_SUCCESS(state) {
   state.error = null;
   state.token.continuation = null;
   state.token.access = null;
-  state.mailboxes = null;
+  state.mailboxes = {
+    list: [],
+  };
 }
 
 export function GET_MAILBOXES_START(state) {

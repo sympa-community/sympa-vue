@@ -1,36 +1,31 @@
 <template>
   <div>
-    <md-button class="md-raised md-accent" @click.native="logout">Logout</md-button>
-    <md-table-card>
-      <md-table md-sort="title" md-sort-type="desc" @select="onSelect">
-        <md-table-header>
-          <md-table-row>
-            <md-table-head>Title</md-table-head>
-            <md-table-head>Address</md-table-head>
-            <md-table-head class="form-actions"></md-table-head>
-          </md-table-row>
-        </md-table-header>
+    <mdl-button raised colored @click.native="logout">Logout</mdl-button>
 
-        <md-table-body>
-          <md-table-row v-for="(row, rowIndex) in mailboxes.list" :key="rowIndex" :md-item="row" md-selection>
-            <md-table-cell :class="{ 'row-bold' : row.unreadMessages }">
-              {{ row.name }} ({{ row.unreadMessages }} / {{ row.totalMessages }})
-            </md-table-cell>
-            <md-table-cell>
-              ID={{ row.id }}; ROLE={{ row.role }}
-            </md-table-cell>
-            <md-table-cell>
-              <md-button class="md-icon-button">
-                <md-icon>star_border</md-icon>
-              </md-button>
-              <md-button class="md-icon-button">
-                <md-icon>more_vert</md-icon>
-              </md-button>
-            </md-table-cell>
-          </md-table-row>
-        </md-table-body>
-      </md-table>
-    </md-table-card>
+    <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" @select="onSelect">
+      <thead>
+        <tr>
+          <th class="mdl-data-table__cell--non-numeric">Title</th>
+          <th class="mdl-data-table__cell--non-numeric">Address</th>
+          <th class="form-actions"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(row, rowIndex) in mailboxes.list">
+          <td class="mdl-data-table__cell--non-numeric" :class="{ 'row-bold' : row.unreadMessages }">
+            {{ row.name }} ({{ row.unreadMessages }} / {{ row.totalMessages }})
+          </td>
+          <td class="mdl-data-table__cell--non-numeric">
+            ID={{ row.id }}; ROLE={{ row.role }}
+          </td>
+          <td>
+            <mdl-button class="md-icon-button" icon="star_border"></mdl-button>
+            <mdl-button class="md-icon-button" icon="more_vert"></mdl-button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
     <div>
       <h2>Selected Data</h2>
       <pre>{{ selectedData  }}</pre>

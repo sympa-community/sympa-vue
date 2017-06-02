@@ -1,17 +1,11 @@
 <template>
-  <div>
-    <md-list>
-      <md-list-item>
-        <router-link :to="{name: 'discussions'}">
-          <md-icon>forum</md-icon>
-          <span>Favorites</span>
-        </router-link>
-      </md-list-item>
-    </md-list>
-
-    <jmap-login v-if="!logged" />
-    <subscribed-list v-else />
-
+  <div class="discussions-subscribed">
+    <router-link :to="{name: 'discussions'}" tag="button" class="mdl-button mdl-js-button mdl-button--colored">
+      <i class="material-icons">forum</i>
+      Favorites
+    </router-link>
+    <jmap-login v-if="!logged"></jmap-login>
+    <subscribed-list v-else></subscribed-list>
   </div>
 </template>
 
@@ -31,5 +25,7 @@ export default {
 </script>
 
 <style scoped>
-
+.discussions-subscribed {
+  padding: 16px;
+}
 </style>
