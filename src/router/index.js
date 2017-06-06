@@ -2,6 +2,10 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Meta from 'vue-meta';
 
+// Headers
+import DefaultHeader from '@/components/headers/Default.vue';
+
+// Pages
 import Dashboard from '@/components/pages/Dashboard.vue';
 import About from '@/components/pages/About.vue';
 import Admin from '@/components/pages/Admin.vue';
@@ -19,53 +23,77 @@ export default new Router({
   routes: [{
     path: '/',
     name: 'home',
-    component: Dashboard,
+    components: {
+      default: Dashboard,
+      header: DefaultHeader,
+    },
   }, {
     path: '/about',
     name: 'about',
-    component: About,
+    components: {
+      default: About,
+      header: DefaultHeader,
+    },
     meta: {
       title: 'About/Help',
     },
   }, {
     path: '/admin',
     name: 'admin',
-    component: Admin,
+    components: {
+      default: Admin,
+      header: DefaultHeader,
+    },
     meta: {
       title: 'Administration',
     },
   }, {
     path: '/discussions',
     name: 'discussions',
-    component: Discussions,
+    components: {
+      default: Discussions,
+      header: DefaultHeader,
+    },
     meta: {
       title: 'Discussions',
     },
   }, {
     path: '/discussions/subscribed',
     name: 'discussionsSubscribed',
-    component: DiscussionsSubscribed,
+    components: {
+      default: DiscussionsSubscribed,
+      header: DefaultHeader,
+    },
     meta: {
       title: 'Discussions',
     },
   }, {
     path: '/listmaster',
     name: 'listmaster',
-    component: Listmaster,
+    components: {
+      default: Listmaster,
+      header: DefaultHeader,
+    },
     meta: {
       title: 'Listmaster Admin',
     },
   }, {
     path: '/profile',
     name: 'profile',
-    component: Profile,
+    components: {
+      default: Profile,
+      header: DefaultHeader,
+    },
     meta: {
       title: 'Profile',
     },
   }, {
     path: '/settings',
     name: 'settings',
-    component: Settings,
+    components: {
+      default: Settings,
+      header: DefaultHeader,
+    },
     meta: {
       title: 'Settings',
     },
