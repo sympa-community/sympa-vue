@@ -11,8 +11,8 @@
         </div>
       </div>
       <div class="mdl-card__actions mdl-card--border">
-        <mdl-button>Review</mdl-button>
-        <mdl-button>Ignore</mdl-button>
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Review</button>
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Ignore</button>
       </div>
     </div>
 
@@ -27,8 +27,8 @@
         </div>
       </div>
       <div class="mdl-card__actions mdl-card--border">
-        <mdl-button>Review</mdl-button>
-        <mdl-button>Ignore</mdl-button>
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Review</button>
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Ignore</button>
       </div>
     </div>
 
@@ -43,8 +43,8 @@
         </div>
       </div>
       <div class="mdl-card__actions mdl-card--border">
-        <mdl-button>Review</mdl-button>
-        <mdl-button>Ignore</mdl-button>
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Review</button>
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Ignore</button>
       </div>
     </div>
   </div>

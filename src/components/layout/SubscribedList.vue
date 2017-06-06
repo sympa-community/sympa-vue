@@ -1,10 +1,14 @@
 <template>
   <div>
-    <mdl-button raised colored @click.native="logout">Logout</mdl-button>
-
-    <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" @select="onSelect">
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" @click.native="logout">Logout</button>
+    <table class="mdl-data-table mdl-shadow--2dp" @select="onSelect">
       <thead>
         <tr>
+          <th>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect mdl-data-table__select" for="table-header">
+              <input type="checkbox" id="table-header" class="mdl-checkbox__input" />
+            </label>
+          </th>
           <th class="mdl-data-table__cell--non-numeric">Title</th>
           <th class="mdl-data-table__cell--non-numeric">Address</th>
           <th class="form-actions"></th>
@@ -12,6 +16,11 @@
       </thead>
       <tbody>
         <tr v-for="(row, rowIndex) in mailboxes.list">
+          <td>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect mdl-data-table__select" :for="'row-' + rowIndex">
+              <input type="checkbox" :id="'row-' + rowIndex" class="mdl-checkbox__input" />
+            </label>
+          </td>
           <td class="mdl-data-table__cell--non-numeric" :class="{ 'row-bold' : row.unreadMessages }">
             {{ row.name }} ({{ row.unreadMessages }} / {{ row.totalMessages }})
           </td>
@@ -19,8 +28,12 @@
             ID={{ row.id }}; ROLE={{ row.role }}
           </td>
           <td>
-            <mdl-button class="md-icon-button" icon="star_border"></mdl-button>
-            <mdl-button class="md-icon-button" icon="more_vert"></mdl-button>
+            <button class="mdl-button mdl-js-button mdl-button--icon">
+              <i class="material-icons">star_border</i>
+            </button>
+            <button class="mdl-button mdl-js-button mdl-button--icon">
+              <i class="material-icons">more_vert</i>
+            </button>
           </td>
         </tr>
       </tbody>
@@ -55,10 +68,30 @@ export default {
     },
   },
   computed: mapGetters('jmap', ['mailboxes']),
+  mounted() {
+    const table = document.querySelector('table');
+    const headerCheckbox = table.querySelector('thead .mdl-data-table__select input');
+    const boxes = table.querySelectorAll('tbody .mdl-data-table__select');
+    const headerCheckHandler = (event) => {
+      if (event.target.checked) {
+        for (let i = 0, length = boxes.length; i < length; i += 1) {
+          boxes[i].MaterialCheckbox.check();
+        }
+      } else {
+        for (let i = 0, length = boxes.length; i < length; i += 1) {
+          boxes[i].MaterialCheckbox.uncheck();
+        }
+      }
+    };
+    headerCheckbox.addEventListener('change', headerCheckHandler);
+  },
 };
 </script>
 
 <style scoped>
+table {
+  width: 100%;
+}
 .form-actions {
   width: 50px;
 }

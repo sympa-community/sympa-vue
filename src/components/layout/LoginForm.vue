@@ -6,12 +6,18 @@
       </div>
       <div class="mdl-card__supporting-text">
         <p>Tip: try <code>username</code> / <code>password</code></p>
-        <mdl-textfield floating-label="Username / Email" v-model="username" :disabled="pending" :class="{ 'is-invalid': errored }"></mdl-textfield>
-        <mdl-textfield type="password" floating-label="Password" v-model="password" :disabled="pending" :class="{ 'is-invalid': errored }"></mdl-textfield>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" :class="{ 'is-invalid': errored }">
+          <input class="mdl-textfield__input" type="text" id="login_username" :disabled="pending" v-model="username">
+          <label class="mdl-textfield__label" for="login_username">Username / Email</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" :class="{ 'is-invalid': errored }">
+          <input class="mdl-textfield__input" type="password" id="login_password" :disabled="pending" v-model="password">
+          <label class="mdl-textfield__label" for="login_password">Password</label>
+        </div>
         <span v-if="errored" class="md-error">{{ errorMessage }}</span>
       </div>
       <div class="mdl_card__actions">
-        <mdl-button colored type="submit" :disabled="pending">Login</mdl-button>
+        <button class="mdl-button mdl-js-button mdl-button--primary" type="submit" :disabled="pending">Login</button>
       </div>
     </div>
   </form>

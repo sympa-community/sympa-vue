@@ -5,13 +5,22 @@
         <h2 class="mdl-card__title-text">Login</h2>
       </div>
       <div class="mdl-card__supporting-text">
-        <mdl-textfield type="url" floating-label="Authentication endpoint" v-model="endpoint" :disabled="pending"></mdl-textfield>
-        <mdl-textfield type="email" floating-label="Username / Email" v-model="username" :disabled="pending"></mdl-textfield>
-        <mdl-textfield type="password" floating-label="Password" v-model="password"></mdl-textfield>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" id="jmap_endpoint" :disabled="pending" v-model="endpoint">
+          <label class="mdl-textfield__label" for="jmap_endpoint">Authentication endpoint</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" id="jmap_username" :disabled="pending" v-model="username">
+          <label class="mdl-textfield__label" for="jmap_username">Username / Email</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="password" id="jmap_password" :disabled="pending" v-model="password">
+          <label class="mdl-textfield__label" for="jmap_password">Password</label>
+        </div>
         <span v-if="errored" class="md-error">{{ errorMessage }}</span>
       </div>
       <div class="mdl_card__actions">
-        <mdl-button colored type="submit" :disabled="pending">Login</mdl-button>
+        <button class="mdl-button mdl-js-button mdl-button--primary" type="submit" :disabled="pending">Login</button>
       </div>
     </div>
   </form>

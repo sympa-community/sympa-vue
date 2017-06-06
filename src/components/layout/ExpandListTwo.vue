@@ -2,7 +2,9 @@
   <div class="expand-list" :class="{'expanded' : expanded}">
     <div class="mdl-navigation__link mdl-list__item mdl-list__item--two-line">
       <span class="mdl-list__item-primary-content" @click="toggleExpand">
-        <mdl-button class="mdl-list__item-secondary-content mdl-list__item-secondary-action expand-list-more" icon="expand_more" disabled></mdl-button>
+        <button class="mdl-list__item-secondary-content mdl-list__item-secondary-action expand-list-more mdl-button mdl-js-button mdl-button--icon" disabled>
+          <i class="material-icons">expand_more</i>
+        </button>
         <slot></slot>
       </span>
     </div>

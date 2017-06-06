@@ -38,7 +38,7 @@
     </header>
 
     <main class="mdl-layout__content">
-      <transition name="fade" appear mode="out-in">
+      <transition name="fade" appear mode="out-in" v-on:after-enter="upgradeDom">
         <router-view v-if="logged"></router-view>
         <login-form v-else></login-form>
       </transition>
@@ -47,9 +47,6 @@
 </template>
 
 <script>
-import Vue from 'vue';
-
-import VueMdl from 'vue-mdl';
 import { mapGetters } from 'vuex';
 
 import router from '@/router';
@@ -57,8 +54,6 @@ import store from '@/store';
 
 import Sidebar from '@/components/layout/Sidebar.vue';
 import LoginForm from '@/components/layout/LoginForm.vue';
-
-Vue.use(VueMdl);
 
 export default {
   name: 'app',
@@ -74,6 +69,11 @@ export default {
       title: this.$route.meta.title,
       titleTemplate: `${((this.$route.meta.title) ? '%s | ' : '')} Sympa`,
     };
+  },
+  methods: {
+    upgradeDom() {
+      window.componentHandler.upgradeDom();
+    },
   },
 };
 </script>

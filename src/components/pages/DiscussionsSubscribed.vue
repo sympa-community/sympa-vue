@@ -4,7 +4,7 @@
       <i class="material-icons">forum</i>
       Favorites
     </router-link>
-    <jmap-login v-if="!logged"></jmap-login>
+    <jmap-login v-if="logged"></jmap-login>
     <subscribed-list v-else></subscribed-list>
   </div>
 </template>

@@ -18,8 +18,12 @@
               </span>
               <span class="mdl-list__item-secondary-content">
                 <div>
-                  <mdl-button icon="check"></mdl-button>
-                  <mdl-button icon="delete"></mdl-button>
+                  <button class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">check</i>
+                  </button>
+                  <button class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">delete</i>
+                  </button>
                 </div>
               </span>
             </div>
@@ -31,8 +35,12 @@
               </span>
               <span class="mdl-list__item-secondary-content">
                 <div>
-                  <mdl-button icon="check"></mdl-button>
-                  <mdl-button icon="delete"></mdl-button>
+                  <button class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">check</i>
+                  </button>
+                  <button class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">delete</i>
+                  </button>
                 </div>
               </span>
             </div>
@@ -44,8 +52,12 @@
               </span>
               <span class="mdl-list__item-secondary-content">
                 <div>
-                  <mdl-button icon="check"></mdl-button>
-                  <mdl-button icon="delete"></mdl-button>
+                  <button class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">check</i>
+                  </button>
+                  <button class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">delete</i>
+                  </button>
                 </div>
               </span>
             </div>
@@ -65,8 +77,8 @@
         </div>
       </div>
       <div class="mdl-card__actions mdl-card--border">
-        <mdl-button>Review</mdl-button>
-        <mdl-button>Ignore</mdl-button>
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Review</button>
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Ignore</button>
       </div>
     </div>
 

@@ -66,35 +66,6 @@
       </router-link>
     </nav>
   </div>
-<!--   <md-sidenav class="md-left" ref="sidebar">
-    <md-toolbar md-theme="white">
-      <img src="../../assets/logo.svg" alt="">
-      <h2>SYMPA</h2>
-    </md-toolbar>
-    <md-divider></md-divider>
-    <md-list class="sidebar-user">
-      <md-list-item class="md-double-line">
-        <md-avatar>
-          <img :src="picture" alt="avatar">
-        </md-avatar>
-        <div class="sidebar-user-meta">
-          <div class="sidebar-user-fullname">{{ fullname }}</div>
-          <div class="sidebar-user-email">{{ email }}</div>
-        </div>
-
-        <md-list-expand>
-          <md-list>
-            <md-list-item @click.native="logout">
-              Logout
-            </md-list-item>
-          </md-list>
-        </md-list-expand>
-      </md-list-item>
-    </md-list>
-    <md-divider />
-
-    </md-list>
-  </md-sidenav> -->
 </template>
 
 <script>
