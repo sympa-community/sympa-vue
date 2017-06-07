@@ -4,6 +4,8 @@ import Meta from 'vue-meta';
 
 // Headers
 import DefaultHeader from '@/components/headers/Default.vue';
+import DiscussionsHeader from '@/components/headers/Discussions.vue';
+import ListmasterHeader from '@/components/headers/Listmaster.vue';
 
 // Pages
 import Dashboard from '@/components/pages/Dashboard.vue';
@@ -52,7 +54,7 @@ export default new Router({
     name: 'discussions',
     components: {
       default: Discussions,
-      header: DefaultHeader,
+      header: DiscussionsHeader,
     },
     meta: {
       title: 'Discussions',
@@ -62,7 +64,7 @@ export default new Router({
     name: 'discussionsSubscribed',
     components: {
       default: DiscussionsSubscribed,
-      header: DefaultHeader,
+      header: DiscussionsHeader,
     },
     meta: {
       title: 'Discussions',
@@ -72,7 +74,7 @@ export default new Router({
     name: 'listmaster',
     components: {
       default: Listmaster,
-      header: DefaultHeader,
+      header: ListmasterHeader,
     },
     meta: {
       title: 'Listmaster Admin',

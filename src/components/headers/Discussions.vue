@@ -24,11 +24,17 @@
     </div>
 
     <!-- Tabs -->
-    <!-- <div class="mdl-layout__tab-bar">
-      <router-link exact :to="{name: ''}" exact-active-class="is-active" class="mdl-layout__tab">
-
+    <div class="mdl-layout__tab-bar">
+      <router-link exact :to="{name: 'discussions'}" exact-active-class="is-active" class="mdl-layout__tab">
+        Favorites
       </router-link>
-    </div> -->
+      <router-link exact :to="{name: 'discussionsSubscribed'}" exact-active-class="is-active" class="mdl-layout__tab">
+        Subscribed
+      </router-link>
+      <router-link exact :to="{name: 'discussions'}" exact-active-class="is-active" class="mdl-layout__tab">
+        All
+      </router-link>
+    </div>
   </header>
 </template>
 
@@ -36,7 +42,7 @@
 import router from '@/router';
 
 export default {
-  name: 'header-default',
+  name: 'header-discussions',
   router,
 };
 </script>

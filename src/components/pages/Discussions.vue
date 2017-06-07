@@ -1,9 +1,5 @@
 <template>
   <div class="discussions">
-    <router-link :to="{name: 'discussionsSubscribed'}" tag="button" class="mdl-button mdl-js-button mdl-button--colored">
-      <i class="material-icons">forum</i>
-      Subscribed
-    </router-link>
     <grid-title>Groupe de discussions</grid-title>
     <grid-list>
       <grid-item></grid-item>

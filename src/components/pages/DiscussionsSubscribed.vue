@@ -1,9 +1,5 @@
 <template>
   <div class="discussions-subscribed">
-    <router-link :to="{name: 'discussions'}" tag="button" class="mdl-button mdl-js-button mdl-button--colored">
-      <i class="material-icons">forum</i>
-      Favorites
-    </router-link>
     <jmap-login v-if="!logged"></jmap-login>
     <subscribed-list v-else></subscribed-list>
   </div>

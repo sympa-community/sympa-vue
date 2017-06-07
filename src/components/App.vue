@@ -76,6 +76,9 @@ body {
   right: 25px;
   bottom: 25px;
 }
+header .mdl-layout__tab-bar {
+  height: 48px;
+}
 @media screen and (min-width: 960px) {
   .mdl-layout__container {
     left: 256px;
