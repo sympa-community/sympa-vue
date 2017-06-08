@@ -115,6 +115,7 @@ export default {
 }
 .sidebar-item {
   padding: 16px !important;
+  cursor: pointer;
 }
 .sidebar-item.router-link-active, .sidebar-item.router-link-active i {
   color: rgb(63,81,181) !important;

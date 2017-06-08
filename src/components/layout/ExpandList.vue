@@ -1,7 +1,7 @@
 <template>
   <div class="expand-list" :class="{'expanded' : expanded}">
-    <div class="mdl-navigation__link mdl-list__item">
-      <span class="mdl-list__item-primary-content" @click="toggleExpand">
+    <div class="mdl-navigation__link mdl-list__item" @click="toggleExpand">
+      <span class="mdl-list__item-primary-content">
         <slot></slot>
         <div class="mdl-layout-spacer"></div>
         <button class="mdl-list__item-secondary-content mdl-list__item-secondary-action expand-list-more mdl-button mdl-js-button mdl-button--icon" disabled>
@@ -47,5 +47,8 @@ export default {
 }
 .expand-list.expanded .expand-list-more {
   transform: rotate(180deg);
+}
+.mdl-navigation__link {
+  cursor: pointer;
 }
 </style>

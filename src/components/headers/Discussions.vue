@@ -39,10 +39,7 @@
 </template>
 
 <script>
-import router from '@/router';
-
 export default {
   name: 'header-discussions',
-  router,
 };
 </script>

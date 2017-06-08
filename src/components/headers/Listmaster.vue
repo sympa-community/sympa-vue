@@ -45,10 +45,7 @@
 </template>
 
 <script>
-import router from '@/router';
-
 export default {
   name: 'header-listmaster',
-  router,
 };
 </script>
