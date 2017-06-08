@@ -1,15 +1,6 @@
 export default {
   mailboxes: {
-    // list: [],
-    list: [
-      {
-        name: 'nom',
-        unreadMessages: 42,
-        totalMessages: 512,
-        id: '454844zaeaze46za4da6z8dzaedaz6da6f',
-        role: 'test',
-      },
-    ],
+    list: [],
   },
   pending: false,
   error: null,

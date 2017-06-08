@@ -6,7 +6,7 @@
     </div>
     <nav class="mdl-navigation sidebar-nav">
       <hr class="sidebar-divider" v-if="logged">
-      <expand-list-two v-if="logged">
+      <expand-list details v-if="logged">
         <div>
           <img :src="picture" class="mdl-list__item-avatar" alt="avatar">
           <span>{{ fullname }}</span>
@@ -19,7 +19,7 @@
             </span>
           </div>
         </div>
-      </expand-list-two>
+      </expand-list>
       <hr class="sidebar-divider">
       <router-link exact :to="{name: 'home'}" class="mdl-navigation__link mdl-list__item sidebar-item">
         <span class="mdl-list__item-primary-content">
@@ -69,7 +69,7 @@
 </template>
 
 <script>
-import ExpandListTwo from '@/components/layout/ExpandListTwo.vue';
+import ExpandList from '@/components/layout/ExpandList.vue';
 import { mapGetters } from 'vuex';
 
 export default {
@@ -90,7 +90,7 @@ export default {
     },
   },
   components: {
-    ExpandListTwo,
+    ExpandList,
   },
 };
 </script>
@@ -116,6 +116,7 @@ export default {
 .sidebar-item {
   padding: 16px !important;
   cursor: pointer;
+  background-color: #fff;
 }
 .sidebar-item.router-link-active, .sidebar-item.router-link-active i {
   color: rgb(63,81,181) !important;

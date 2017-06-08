@@ -14,7 +14,7 @@
             <div class="mdl-list__item mdl-list__item">
               <span class="mdl-list__item-primary-content">
                 <i class="material-icons mdl-list__item-avatar">person</i>
-                <span>Aaron Paul</span>
+                <span>John Doe</span>
               </span>
               <span class="mdl-list__item-secondary-content">
                 <div>
@@ -31,7 +31,7 @@
             <div class="mdl-list__item mdl-list__item">
               <span class="mdl-list__item-primary-content">
                 <i class="material-icons mdl-list__item-avatar">person</i>
-                <span>Aaron Paul</span>
+                <span>Jane Doe</span>
               </span>
               <span class="mdl-list__item-secondary-content">
                 <div>
@@ -48,7 +48,7 @@
             <div class="mdl-list__item mdl-list__item">
               <span class="mdl-list__item-primary-content">
                 <i class="material-icons mdl-list__item-avatar">person</i>
-                <span>Aaron Paul</span>
+                <span>Jean Dupondt</span>
               </span>
               <span class="mdl-list__item-secondary-content">
                 <div>
