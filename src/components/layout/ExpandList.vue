@@ -1,5 +1,5 @@
 <template>
-  <div class="expand-list" :class="{'expanded' : expanded}">
+  <div class="expand-list" :class="{ expanded }" :style="{ maxHeight }">
 
     <!-- With details -->
     <div class="mdl-navigation__link mdl-list__item mdl-list__item--two-line" @click="toggleExpand" v-if="details">
@@ -23,7 +23,7 @@
     </div>
 
     <!-- Content to expand -->
-    <div>
+    <div ref="expand">
       <slot name="expand"></slot>
     </div>
   </div>
@@ -35,23 +35,20 @@ export default {
   props: {
     details: Boolean,
   },
+  computed: {
+    maxHeight() {
+      return this.expanded ? `${this.expandHeight + 72}px` : '72px';
+    },
+  },
   methods: {
     toggleExpand() {
-      // compute max-height if not already computed
-      if (!this.heightComputed && this.$el.style.overflow === 'hidden') {
-        this.$el.style.overflow = 'visible';
-        this.$el.style.maxHeight = `${this.$el.offsetHeight}px`;
-        this.$el.style.overflow = 'hidden';
-        this.heightComputed = true;
-      }
-
-      // change state
+      this.expandHeight = this.$refs.expand.offsetHeight;
       this.expanded = !this.expanded;
     },
   },
   data: () => ({
     expanded: false,
-    heightComputed: false,
+    expandHeight: -1,
   }),
 };
 </script>
@@ -61,24 +58,24 @@ export default {
   padding: 16px !important;
   position: relative;
 }
+
 .expand-list {
-  transition: max-height .8s ease-in-out 0.1s;
+  transition: max-height .3s ease-in-out;
   overflow: hidden;
   max-height: 72px;
 }
-.expand-list.expanded {
-  overflow: visible;
-  max-height: 1024px;
-}
+
 .expand-list-more {
   transition: .4s;
   position: absolute;
   right: 16px;
   top: 16px;
 }
+
 .expand-list.expanded .expand-list-more {
   transform: rotate(180deg);
 }
+
 .mdl-navigation__link, button > i {
   cursor: pointer;
 }
