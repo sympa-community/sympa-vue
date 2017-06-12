@@ -13,19 +13,19 @@
 
     <!-- Tabs -->
     <div class="mdl-layout__tab-bar" slot="tabs">
-      <router-link exact :to="{name: 'listmaster'}" exact-active-class="is-active" class="mdl-layout__tab">
+      <router-link exact :to="{name: 'listmaster'}" active-class="is-active" class="mdl-layout__tab">
         Summary
       </router-link>
-      <router-link exact :to="{name: 'listmaster'}" exact-active-class="is-active" class="mdl-layout__tab">
+      <router-link exact :to="{name: 'listmaster'}" active-class="is-active" class="mdl-layout__tab">
         Members
       </router-link>
-      <router-link exact :to="{name: 'listmaster'}" exact-active-class="is-active" class="mdl-layout__tab">
+      <router-link exact :to="{name: 'listmaster'}" active-class="is-active" class="mdl-layout__tab">
         Details
       </router-link>
-      <router-link exact :to="{name: 'listmasterDatasources'}" exact-active-class="is-active" class="mdl-layout__tab">
+      <router-link :to="{name: 'listmasterDatasources'}" active-class="is-active" class="mdl-layout__tab">
         Data sources
       </router-link>
-      <router-link exact :to="{name: 'listmaster'}" exact-active-class="is-active" class="mdl-layout__tab">
+      <router-link exact :to="{name: 'listmaster'}" active-class="is-active" class="mdl-layout__tab">
         Miscellaneous
       </router-link>
     </div>

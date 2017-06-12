@@ -19,6 +19,9 @@ import DiscussionsSubscribed from '@/components/pages/discussions/Subscribed.vue
 // listmaster
 import Listmaster from '@/components/pages/listmaster/Summary.vue';
 import ListmasterDatasources from '@/components/pages/listmaster/Datasources.vue';
+// listmaster/datasources
+import ListmasterDatasourcesNew from '@/components/pages/listmaster/datasources/New.vue';
+import ListmasterDatasourcesSettings from '@/components/pages/listmaster/datasources/Settings.vue';
 
 Vue.use(Router);
 Vue.use(Meta);
@@ -88,10 +91,30 @@ export default new Router({
     components: {
       default: ListmasterDatasources,
       header: ListmasterHeader,
+      datasources: ListmasterDatasourcesSettings,
     },
     meta: {
       title: 'Listmaster Admin',
     },
+    props: {
+      default: {
+        content: false,
+      },
+    },
+    children: [
+      {
+        path: '',
+        component: ListmasterDatasourcesSettings,
+      },
+      {
+        path: 'new',
+        component: ListmasterDatasourcesNew,
+      },
+      {
+        path: 'settings',
+        component: ListmasterDatasourcesSettings,
+      },
+    ],
   }, {
     path: '/profile',
     name: 'profile',

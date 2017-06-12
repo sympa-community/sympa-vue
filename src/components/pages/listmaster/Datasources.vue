@@ -1,21 +1,21 @@
 <template>
-  <div class="datasources-page">
+  <div class="datasources-page" :class="classes">
     <div class="datasources-menu">
       <ul class="mdl-list page-list">
-        <li class="mdl-list__item mdl-list__item--two-line">
+        <router-link :to="{path: '/listmaster/datasources/settings'}" tag="li" class="mdl-list__item mdl-list__item--two-line">
           <span class="mdl-list__item-primary-content">
             <i class="material-icons mdl-list__item-icon">settings</i>
             <span>Data sources settings</span>
             <span class="mdl-list__item-sub-title">General syncing parameters</span>
           </span>
-        </li>
-        <li class="mdl-list__item mdl-list__item--two-line">
+        </router-link>
+        <router-link :to="{path: '/listmaster/datasources/new'}" tag="li" class="mdl-list__item mdl-list__item--two-line">
           <span class="mdl-list__item-primary-content">
             <i class="material-icons mdl-list__item-icon">add</i>
             <span>Add new data source</span>
             <span class="mdl-list__item-sub-title">Import data from external source</span>
           </span>
-        </li>
+        </router-link>
       </ul>
 
       <h2 class="page-title">Members</h2>
@@ -119,7 +119,7 @@
       </ul>
     </div>
     <div class="datasources-content">
-      content will be inserted here!
+      <router-view></router-view>
     </div>
   </div>
 </template>
@@ -127,6 +127,27 @@
 <script>
 export default {
   name: 'ListmasterDatasources',
+  data() {
+    return {
+      content: this.$route.matched[0].path !== '/listmaster/datasources',
+      getClasses: this.classes,
+    };
+  },
+  computed: {
+    classes() {
+      return {
+        'with-content': this.content,
+        'without-content': !this.content,
+      };
+    },
+  },
+  watch: {
+    $route() {
+      this.content = this.$route.path !== '/listmaster/datasources';
+      this.classes['with-content'] = this.content;
+      this.classes['without-content'] = !this.content;
+    },
+  },
 };
 </script>
 
@@ -140,20 +161,25 @@ export default {
   width: 100%;
 }
 
-.datasources-menu {
+.without-content > .datasources-menu {
   flex: 1;
 }
 
-.datasources-content {
+.without-content > .datasources-content {
   display: none;
+}
+
+.with-content > .datasources-menu {
+  display: none;
+}
+
+.with-content > .datasources-content {
+  flex: 1;
 }
 
 @media screen and (min-width: 768px) {
   .datasources-menu {
     border-right: 1px solid #d8d8d8;
-  }
-
-  .datasources-menu {
     width: 350px;
   }
 
@@ -164,7 +190,7 @@ export default {
   .datasources-menu,
   .datasources-content {
     vertical-align: top;
-    display: inline-block;
+    display: inline-block !important;
     overflow: auto;
     max-height: calc(100vh - 112px);
   }
