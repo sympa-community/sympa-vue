@@ -65,16 +65,26 @@ body {
 .page-list {
   margin: 0;
   padding-bottom: 0;
-  border-bottom: 3px solid #999;
+  border-bottom: 3px solid #d8d8d8;
 }
 .page-list > li {
+  color: #666;
   background-color: #fff;
-  border-top: 1px solid #999;
+  border-top: 1px solid #d8d8d8;
 }
 .button-fixed-bottom-right {
   position: fixed;
   right: 25px;
   bottom: 25px;
+}
+.txt-error {
+  color: #d0011b !important;
+}
+.txt-success {
+  color: #65A026 !important;
+}
+.txt-bold {
+  font-weight: bold !important;
 }
 header .mdl-layout__tab-bar {
   height: 48px;

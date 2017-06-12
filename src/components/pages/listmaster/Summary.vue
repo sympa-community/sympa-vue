@@ -1,108 +1,130 @@
 <template>
-  <div class="card-grid">
+  <div class="card-grid mdl-grid">
 
-    <div class="mdl-card mdl-shadow--2dp">
-      <div class="mdl-card__supporting-text card-content">
-        <div class="deploy">3 subscriptions pending</div>
-      </div>
-      <div class="mdl-card__actions mdl-card--border">
-        <expand-list>
-          <div>
-            <span class="deploy-title">View pending subscriptions</span>
-          </div>
-          <div slot="expand">
-            <div class="mdl-list__item mdl-list__item">
-              <span class="mdl-list__item-primary-content">
-                <i class="material-icons mdl-list__item-avatar">person</i>
-                <span>John Doe</span>
-              </span>
-              <span class="mdl-list__item-secondary-content">
-                <div>
-                  <button class="mdl-button mdl-js-button mdl-button--icon">
-                    <i class="material-icons">check</i>
-                  </button>
-                  <button class="mdl-button mdl-js-button mdl-button--icon">
-                    <i class="material-icons">delete</i>
-                  </button>
-                </div>
-              </span>
-            </div>
-
-            <div class="mdl-list__item mdl-list__item">
-              <span class="mdl-list__item-primary-content">
-                <i class="material-icons mdl-list__item-avatar">person</i>
-                <span>Jane Doe</span>
-              </span>
-              <span class="mdl-list__item-secondary-content">
-                <div>
-                  <button class="mdl-button mdl-js-button mdl-button--icon">
-                    <i class="material-icons">check</i>
-                  </button>
-                  <button class="mdl-button mdl-js-button mdl-button--icon">
-                    <i class="material-icons">delete</i>
-                  </button>
-                </div>
-              </span>
-            </div>
-
-            <div class="mdl-list__item mdl-list__item">
-              <span class="mdl-list__item-primary-content">
-                <i class="material-icons mdl-list__item-avatar">person</i>
-                <span>Jean Dupondt</span>
-              </span>
-              <span class="mdl-list__item-secondary-content">
-                <div>
-                  <button class="mdl-button mdl-js-button mdl-button--icon">
-                    <i class="material-icons">check</i>
-                  </button>
-                  <button class="mdl-button mdl-js-button mdl-button--icon">
-                    <i class="material-icons">delete</i>
-                  </button>
-                </div>
-              </span>
-            </div>
-          </div>
-        </expand-list>
-      </div>
-    </div>
-
-    <div class="mdl-card mdl-shadow--2dp">
-      <div class="mdl-list">
-        <div class="mdl-list__item mdl-list__item--two-line">
-          <span class="mdl-list__item-primary-content">
-            <img src="//placehold.it/40x40" class="mdl-list__item-avatar" alt="avatar">
-            <span>john.doe@example.com is bouncing!</span>
-            <span class="mdl-list__item-sub-title">Bounced 3 times since 12 jan. 17'</span>
-          </span>
+    <div class="mdl-cell mdl-cell--12-col">
+      <div class="error-card mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <h4><i class="material-icons">error</i> Errors in last data sync</h4>
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Details</button>
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Dismiss</button>
         </div>
       </div>
-      <div class="mdl-card__actions mdl-card--border">
-        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Review</button>
-        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Ignore</button>
+    </div>
+
+    <div class="mdl-cell mdl-cell--12-col">
+      <div class="mdl-card mdl-shadow--2dp">
+        <div class="mdl-list">
+          <div class="mdl-list__item mdl-list__item--two-line">
+            <span class="mdl-list__item-primary-content">
+              <img src="//placehold.it/40x40" class="mdl-list__item-avatar" alt="avatar">
+              <span>john.doe@example.com is bouncing!</span>
+              <span class="mdl-list__item-sub-title">Bounced 3 times since 12 jan. 17'</span>
+            </span>
+          </div>
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Review</button>
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Ignore</button>
+        </div>
       </div>
     </div>
 
-    <div class="mdl-card mdl-shadow--2dp">
-      <div class="mdl-card__supporting-text card-content">
-        <span>Members</span>
-        <span class="stat">384</span>
-        <span><span class="positive-stat">+12</span> this month</span>
+    <div class="mdl-cell mdl-cell--12-col">
+      <div class="mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__supporting-text card-content">
+          <div class="deploy">3 subscriptions pending</div>
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+          <expand-list>
+            <div>
+              <span class="deploy-title">View pending subscriptions</span>
+            </div>
+            <div slot="expand">
+              <div class="mdl-list__item mdl-list__item">
+                <span class="mdl-list__item-primary-content">
+                  <i class="material-icons mdl-list__item-avatar">person</i>
+                  <span>John Doe</span>
+                </span>
+                <span class="mdl-list__item-secondary-content">
+                  <div>
+                    <button class="mdl-button mdl-js-button mdl-button--icon">
+                      <i class="material-icons">check</i>
+                    </button>
+                    <button class="mdl-button mdl-js-button mdl-button--icon">
+                      <i class="material-icons">delete</i>
+                    </button>
+                  </div>
+                </span>
+              </div>
+
+              <div class="mdl-list__item mdl-list__item">
+                <span class="mdl-list__item-primary-content">
+                  <i class="material-icons mdl-list__item-avatar">person</i>
+                  <span>Jane Doe</span>
+                </span>
+                <span class="mdl-list__item-secondary-content">
+                  <div>
+                    <button class="mdl-button mdl-js-button mdl-button--icon">
+                      <i class="material-icons">check</i>
+                    </button>
+                    <button class="mdl-button mdl-js-button mdl-button--icon">
+                      <i class="material-icons">delete</i>
+                    </button>
+                  </div>
+                </span>
+              </div>
+
+              <div class="mdl-list__item mdl-list__item">
+                <span class="mdl-list__item-primary-content">
+                  <i class="material-icons mdl-list__item-avatar">person</i>
+                  <span>Jean Dupondt</span>
+                </span>
+                <span class="mdl-list__item-secondary-content">
+                  <div>
+                    <button class="mdl-button mdl-js-button mdl-button--icon">
+                      <i class="material-icons">check</i>
+                    </button>
+                    <button class="mdl-button mdl-js-button mdl-button--icon">
+                      <i class="material-icons">delete</i>
+                    </button>
+                  </div>
+                </span>
+              </div>
+            </div>
+          </expand-list>
+        </div>
       </div>
     </div>
 
-    <div class="mdl-card mdl-shadow--2dp">
-      <div class="mdl-card__supporting-text card-content">
-        <span>Bounces</span>
-        <span class="stat">12</span>
-        <span>3.1% of all members</span>
+    <div class="mdl-cell mdl-cell--6-col">
+      <div class="mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__supporting-text card-content">
+          <span>Members</span>
+          <span class="stat">384</span>
+          <span><span class="txt-success">+12</span> this month</span>
+        </div>
       </div>
     </div>
 
-    <div class="mdl-card mdl-shadow--2dp">
-      <div class="mdl-card__supporting-text card-content">
-        <span>Messages</span>
-        <span class="stat">1.33k</span>
-        <span><span class="positive-stat">183</span> this month</span>
+    <div class="mdl-cell mdl-cell--6-col">
+      <div class="mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__supporting-text card-content">
+          <span>Bounces</span>
+          <span class="stat">12</span>
+          <span>3.1% of all members</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdl-cell mdl-cell--6-col">
+      <div class="mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__supporting-text card-content">
+          <span>Messages</span>
+          <span class="stat">1.33k</span>
+          <span><span class="txt-success">183</span> this month</span>
+        </div>
       </div>
     </div>
   </div>
@@ -120,6 +142,37 @@ export default {
 </script>
 
 <style scoped>
+
+.error-card.mdl-card {
+  background: #d0011b;
+}
+.error-card > .mdl-card__actions {
+  border: none;
+}
+.error-card > .mdl-card__title {
+  align-items: flex-start;
+}
+.error-card > .mdl-card__title > h4 {
+  margin-top: 0;
+}
+.error-card > .mdl-card__actions {
+  display: flex;
+  box-sizing:border-box;
+  align-items: center;
+}
+.error-card > .mdl-card__actions > .material-icons {
+  padding-right: 10px;
+}
+.error-card > .mdl-card__title,
+.error-card > .mdl-card__actions,
+.error-card > .mdl-card__actions > .mdl-button {
+  color: #fff;
+}
+
+
+.mdl-cell--6-col {
+  width: calc(50% - 16px) !important;
+}
 .card-content {
   color: #000;
 }
@@ -135,9 +188,6 @@ export default {
   display: block;
   margin: 12px 0;
   font-size: 32px;
-}
-.positive-stat {
-  color: #65A026;
 }
 .deploy-title {
   text-transform: uppercase;
