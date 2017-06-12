@@ -7,8 +7,8 @@
           <h4><i class="material-icons">error</i> Errors in last data sync</h4>
         </div>
         <div class="mdl-card__actions mdl-card--border">
-          <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Details</button>
-          <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Dismiss</button>
+          <sympa-button ripple>Details</sympa-button>
+          <sympa-button ripple>Dismiss</sympa-button>
         </div>
       </div>
     </div>
@@ -25,8 +25,8 @@
           </div>
         </div>
         <div class="mdl-card__actions mdl-card--border">
-          <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Review</button>
-          <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Ignore</button>
+          <sympa-button ripple>Review</sympa-button>
+          <sympa-button ripple>Ignore</sympa-button>
         </div>
       </div>
     </div>
@@ -49,12 +49,8 @@
                 </span>
                 <span class="mdl-list__item-secondary-content">
                   <div>
-                    <button class="mdl-button mdl-js-button mdl-button--icon">
-                      <i class="material-icons">check</i>
-                    </button>
-                    <button class="mdl-button mdl-js-button mdl-button--icon">
-                      <i class="material-icons">delete</i>
-                    </button>
+                    <sympa-button icon="check" icon-only></sympa-button>
+                    <sympa-button icon="delete" icon-only></sympa-button>
                   </div>
                 </span>
               </div>
@@ -66,12 +62,8 @@
                 </span>
                 <span class="mdl-list__item-secondary-content">
                   <div>
-                    <button class="mdl-button mdl-js-button mdl-button--icon">
-                      <i class="material-icons">check</i>
-                    </button>
-                    <button class="mdl-button mdl-js-button mdl-button--icon">
-                      <i class="material-icons">delete</i>
-                    </button>
+                    <sympa-button icon="check" icon-only></sympa-button>
+                    <sympa-button icon="delete" icon-only></sympa-button>
                   </div>
                 </span>
               </div>
@@ -83,12 +75,8 @@
                 </span>
                 <span class="mdl-list__item-secondary-content">
                   <div>
-                    <button class="mdl-button mdl-js-button mdl-button--icon">
-                      <i class="material-icons">check</i>
-                    </button>
-                    <button class="mdl-button mdl-js-button mdl-button--icon">
-                      <i class="material-icons">delete</i>
-                    </button>
+                    <sympa-button icon="check" icon-only></sympa-button>
+                    <sympa-button icon="delete" icon-only></sympa-button>
                   </div>
                 </span>
               </div>
@@ -142,56 +130,66 @@ export default {
 </script>
 
 <style scoped>
-
-.error-card.mdl-card {
-  background: #d0011b;
-}
-.error-card > .mdl-card__actions {
-  border: none;
-}
-.error-card > .mdl-card__title {
-  align-items: flex-start;
-}
-.error-card > .mdl-card__title > h4 {
-  margin-top: 0;
-}
-.error-card > .mdl-card__actions {
-  display: flex;
-  box-sizing:border-box;
-  align-items: center;
-}
-.error-card > .mdl-card__actions > .material-icons {
-  padding-right: 10px;
-}
-.error-card > .mdl-card__title,
-.error-card > .mdl-card__actions,
-.error-card > .mdl-card__actions > .mdl-button {
-  color: #fff;
-}
-
-
 .mdl-cell--6-col {
   width: calc(50% - 16px) !important;
 }
+
 .card-content {
   color: #000;
 }
+
 .card-grid {
   padding: 16px;
 }
+
 .deploy {
   font-size: 24px;
   display: block;
   padding: 16px;
 }
+
 .stat {
   display: block;
   margin: 12px 0;
   font-size: 32px;
 }
+
 .deploy-title {
   text-transform: uppercase;
   color: #787878;
+}
+
+/* Error card */
+.error-card.mdl-card {
+  background: #d0011b;
+}
+
+.error-card > .mdl-card__actions {
+  border: none;
+}
+
+.error-card > .mdl-card__title {
+  align-items: flex-start;
+}
+
+.error-card > .mdl-card__title > h4 {
+  margin-top: 0;
+}
+
+.error-card > .mdl-card__actions {
+  display: flex;
+  box-sizing:border-box;
+  align-items: center;
+}
+
+.error-card > .mdl-card__actions > .material-icons {
+  padding-right: 10px;
+}
+
+.error-card > .mdl-card__title,
+.error-card > .mdl-card__actions,
+.error-card > .mdl-card__actions > .mdl-button {
+  color: #fff;
 }
 </style>
 

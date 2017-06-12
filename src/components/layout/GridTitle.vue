@@ -15,6 +15,7 @@ export default {
   font-size: 34px;
   font-weight: 400;
 }
+
 .grid-title:after {
   display: block;
   content: '';
@@ -23,6 +24,7 @@ export default {
   width: 110px;
   height: 3px;
 }
+
 @media screen and (max-width: 480px) {
   .grid-title {
     display: none;

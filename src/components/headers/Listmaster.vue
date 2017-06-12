@@ -1,20 +1,17 @@
 <template>
   <top>
-    <button class="mdl-button mdl-js-button mdl-button--icon">
-      <i class="material-icons">refresh</i>
-    </button>
-    <button id="header-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
-      <i class="material-icons">more_vert</i>
-    </button>
+    <!-- Actions -->
+    <sympa-button ripple icon="refresh" icon-only></sympa-button>
 
     <!-- Menu -->
-    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="header-menu-lower-right">
-      <li class="mdl-menu__item">Some Action</li>
-      <li class="mdl-menu__item">Another Action</li>
-      <li disabled class="mdl-menu__item">Disabled Action</li>
-      <li class="mdl-menu__item">Yet Another Action</li>
-    </ul>
+    <sympa-menu>
+      <sympa-menu-item>Some action</sympa-menu-item>
+      <sympa-menu-item>Another action</sympa-menu-item>
+      <sympa-menu-item disabled>Disabled action</sympa-menu-item>
+      <sympa-menu-item>Yet Another action</sympa-menu-item>
+    </sympa-menu>
 
+    <!-- Tabs -->
     <div class="mdl-layout__tab-bar" slot="tabs">
       <router-link exact :to="{name: 'listmaster'}" exact-active-class="is-active" class="mdl-layout__tab">
         Summary

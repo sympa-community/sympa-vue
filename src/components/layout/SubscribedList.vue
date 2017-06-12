@@ -28,12 +28,8 @@
             ID={{ row.id }}; ROLE={{ row.role }}
           </td>
           <td>
-            <button class="mdl-button mdl-js-button mdl-button--icon">
-              <i class="material-icons">star_border</i>
-            </button>
-            <button class="mdl-button mdl-js-button mdl-button--icon">
-              <i class="material-icons">more_vert</i>
-            </button>
+            <sympa-button icon="star_border" icon-only></sympa-button>
+            <sympa-button icon="more_vert" icon-only></sympa-button>
           </td>
         </tr>
       </tbody>
@@ -92,12 +88,15 @@ export default {
 table {
   width: 100%;
 }
+
 .form-actions {
   width: 50px;
 }
+
 .md-table-head {
   text-transform: uppercase;
 }
+
 .row-bold {
   font-weight: bold;
 }

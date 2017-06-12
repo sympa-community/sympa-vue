@@ -20,7 +20,7 @@
         <span v-if="errored" class="md-error">{{ errorMessage }}</span>
       </div>
       <div class="mdl-card__actions">
-        <button class="mdl-button mdl-js-button mdl-button--primary" type="submit" :disabled="pending">Login</button>
+        <sympa-button primary type="submit" :disabled="pending">Login</sympa-button>
       </div>
     </div>
   </form>

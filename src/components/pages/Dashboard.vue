@@ -11,8 +11,8 @@
         </div>
       </div>
       <div class="mdl-card__actions mdl-card--border">
-        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Review</button>
-        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Ignore</button>
+        <sympa-button ripple>Review</sympa-button>
+        <sympa-button ripple>Ignore</sympa-button>
       </div>
     </div>
 
@@ -27,8 +27,8 @@
         </div>
       </div>
       <div class="mdl-card__actions mdl-card--border">
-        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Review</button>
-        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Ignore</button>
+        <sympa-button ripple>Review</sympa-button>
+        <sympa-button ripple>Ignore</sympa-button>
       </div>
     </div>
 
@@ -43,8 +43,8 @@
         </div>
       </div>
       <div class="mdl-card__actions mdl-card--border">
-        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Review</button>
-        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Ignore</button>
+        <sympa-button ripple>Review</sympa-button>
+        <sympa-button ripple>Ignore</sympa-button>
       </div>
     </div>
   </div>
@@ -54,6 +54,7 @@
 #home {
   padding: 16px;
 }
+
 .mdl-card {
   min-height: auto;
   width: auto;

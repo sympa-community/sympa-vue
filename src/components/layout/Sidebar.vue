@@ -102,36 +102,46 @@ export default {
   width: 32px;
   margin: 16px;
 }
+
 .sidebar-title {
   display: inline-block;
   font-weight: 300;
   font-size: 18px;
 }
+
 .sidebar-nav {
   padding-top: 0 !important;
 }
+
 .sidebar-divider {
   margin: 0;
 }
+
 .sidebar-item {
   padding: 16px !important;
   cursor: pointer;
   background-color: #fff;
 }
-.sidebar-item.router-link-active, .sidebar-item.router-link-active i {
+
+.sidebar-item.router-link-active,
+.sidebar-item.router-link-active i {
   color: rgb(63,81,181) !important;
 }
+
 .mdl-layout__drawer {
   width: 256px;
   transform: translateX(-256px);
 }
+
 .expand-list-item {
   margin: -16px;
   padding: 0 !important;
 }
+
 .expand-list-item > span {
   cursor: pointer !important;
 }
+
 @media screen and (min-width: 960px) {
   .mdl-layout__drawer {
     left: -256px;

@@ -4,9 +4,7 @@
     <!-- With details -->
     <div class="mdl-navigation__link mdl-list__item mdl-list__item--two-line" @click="toggleExpand" v-if="details">
       <span class="mdl-list__item-primary-content">
-        <button class="mdl-list__item-secondary-content mdl-list__item-secondary-action expand-list-more mdl-button mdl-js-button mdl-button--icon" disabled>
-          <i class="material-icons">expand_more</i>
-        </button>
+        <sympa-button class="mdl-list__item-secondary-content mdl-list__item-secondary-action expand-list-more" icon="expand_more" icon-only></sympa-button>
         <slot></slot>
       </span>
     </div>
@@ -16,9 +14,7 @@
       <span class="mdl-list__item-primary-content">
         <slot></slot>
         <div class="mdl-layout-spacer"></div>
-        <button class="mdl-list__item-secondary-content mdl-list__item-secondary-action expand-list-more mdl-button mdl-js-button mdl-button--icon" disabled>
-          <i class="material-icons">expand_more</i>
-        </button>
+        <sympa-button class="mdl-list__item-secondary-content mdl-list__item-secondary-action expand-list-more" icon="expand_more" icon-only></sympa-button>
       </span>
     </div>
 
