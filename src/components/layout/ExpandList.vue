@@ -37,7 +37,7 @@ export default {
   },
   computed: {
     maxHeight() {
-      return this.expanded ? `${this.expandHeight + 72}px` : '72px';
+      return this.expanded ? `${this.expandHeight + this.minHeight}px` : `${this.minHeight}px`;
     },
   },
   methods: {
@@ -46,10 +46,13 @@ export default {
       this.expanded = !this.expanded;
     },
   },
-  data: () => ({
-    expanded: false,
-    expandHeight: -1,
-  }),
+  data() {
+    return {
+      expanded: false,
+      expandHeight: -1,
+      minHeight: this.details ? 72 : 56,
+    };
+  },
 };
 </script>
 
@@ -62,7 +65,7 @@ export default {
 .expand-list {
   transition: max-height .3s ease-in-out;
   overflow: hidden;
-  max-height: 72px;
+  max-height: 56px;
 }
 
 .expand-list-more {
