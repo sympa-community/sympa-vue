@@ -11,11 +11,14 @@ import ListmasterHeader from '@/components/headers/Listmaster.vue';
 import Dashboard from '@/components/pages/Dashboard.vue';
 import About from '@/components/pages/About.vue';
 import Admin from '@/components/pages/Admin.vue';
-import Discussions from '@/components/pages/Discussions.vue';
-import DiscussionsSubscribed from '@/components/pages/DiscussionsSubscribed.vue';
-import Listmaster from '@/components/pages/Listmaster.vue';
 import Profile from '@/components/pages/Profile.vue';
 import Settings from '@/components/pages/Settings.vue';
+// dicussions
+import Discussions from '@/components/pages/discussions/Favorites.vue';
+import DiscussionsSubscribed from '@/components/pages/discussions/Subscribed.vue';
+// listmaster
+import Listmaster from '@/components/pages/listmaster/Summary.vue';
+import ListmasterDatasources from '@/components/pages/listmaster/Datasources.vue';
 
 Vue.use(Router);
 Vue.use(Meta);
@@ -74,6 +77,16 @@ export default new Router({
     name: 'listmaster',
     components: {
       default: Listmaster,
+      header: ListmasterHeader,
+    },
+    meta: {
+      title: 'Listmaster Admin',
+    },
+  }, {
+    path: '/listmaster/datasources',
+    name: 'listmasterDatasources',
+    components: {
+      default: ListmasterDatasources,
       header: ListmasterHeader,
     },
     meta: {

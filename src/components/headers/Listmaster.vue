@@ -25,7 +25,7 @@
       <router-link exact :to="{name: 'listmaster'}" exact-active-class="is-active" class="mdl-layout__tab">
         Details
       </router-link>
-      <router-link exact :to="{name: 'listmaster'}" exact-active-class="is-active" class="mdl-layout__tab">
+      <router-link exact :to="{name: 'listmasterDatasources'}" exact-active-class="is-active" class="mdl-layout__tab">
         Data sources
       </router-link>
       <router-link exact :to="{name: 'listmaster'}" exact-active-class="is-active" class="mdl-layout__tab">
