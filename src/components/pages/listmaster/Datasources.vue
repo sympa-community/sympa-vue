@@ -189,6 +189,10 @@ export default {
 
 @media screen and (min-width: 960px) {
   .datasources-menu {
+    background-color: #fff;
+  }
+
+  .datasources-menu {
     border-right: 1px solid #d8d8d8;
     width: 350px;
   }
@@ -202,6 +206,7 @@ export default {
     vertical-align: top;
     display: inline-block !important;
     overflow: auto;
+    height: calc(100vh - 112px);
     max-height: calc(100vh - 112px);
   }
 }

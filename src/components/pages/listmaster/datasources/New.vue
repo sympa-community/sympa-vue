@@ -65,11 +65,11 @@ header > div {
   padding-left: 16px;
 }
 
-.datasources-new {
-  background-color: #fff;
-}
-
 @media screen and (max-width: 960px) {
+  .datasources-new {
+    background-color: #fff;
+  }
+
   h1, h2 {
     display: none;
   }

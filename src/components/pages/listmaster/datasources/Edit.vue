@@ -12,6 +12,24 @@
       <h1>Edit SQL Query <strong>test</strong></h1>
       <h2>Include list members from SQL Query</h2>
 
+      <sympa-input label="Short name for this source"></sympa-input>
+
+      <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
+        <select id="gender" class="mdl-selectfield__select">
+          <option value=""></option>
+          <option value="mysql">MySQL</option>
+          <option value="postgresql">PostgreSQL</option>
+        </select>
+        <label class="mdl-selectfield__label" for="gender">Database type</label>
+        <span class="mdl-selectfield__error">Select a value</span>
+      </div>
+
+      <sympa-input label="Remote host"></sympa-input>
+      <sympa-input type="number" label="Port"></sympa-input>
+      <sympa-input label="Remote user"></sympa-input>
+      <sympa-input type="password" label="Password"></sympa-input>
+      <sympa-input label="Database name"></sympa-input>
+
       <div class="query">
         <p class="query-title">SQL Query</p>
         <p class="query-content">SELECT user, email FROM test WHERE foo = 'bar' ORDER BY date;</p>
@@ -39,6 +57,10 @@ export default {
 </script>
 
 <style scoped>
+.mdl-selectfield {
+  width: 100%;
+}
+
 .content {
   padding: 16px;
 }
@@ -70,10 +92,6 @@ header > div {
   padding-left: 16px;
 }
 
-.datasources-edit {
-  background-color: #fff;
-}
-
 .query {
   background: rgba(0, 0, 0, .1);
   border-radius: 4px;
@@ -95,6 +113,10 @@ header > div {
 }
 
 @media screen and (max-width: 960px) {
+  .datasources-edit {
+    background-color: #fff;
+  }
+
   h1, h2 {
     display: none;
   }

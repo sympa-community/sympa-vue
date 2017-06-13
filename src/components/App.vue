@@ -103,6 +103,15 @@ header .mdl-layout__tab-bar {
 }
 
 @media screen and (min-width: 960px) {
+  .page-list {
+    border-bottom: 1px solid #d8d8d8;
+  }
+
+  .page-list > li {
+    border-top: none;
+    user-select: none;
+  }
+
   .mdl-layout__container {
     left: 256px;
     width: calc(100% - 256px);
