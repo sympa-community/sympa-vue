@@ -56,6 +56,10 @@ body {
   background-color: #f5f5f5;
 }
 
+main {
+  z-index: auto !important;
+}
+
 .page-title {
   margin: 15px 8px 8px 8px;
   font-size: 14px;
