@@ -8,8 +8,11 @@
         <sympa-button ripple icon="arrow_forward" icon-only @click.native="next"></sympa-button>
       </div>
     </header>
-    <h1>New</h1>
-    <sympa-button colored raised ripple @click.native="next">Next</sympa-button>
+    <div class="content">
+      <h1>Add a new data source</h1>
+      <h2>Some help text about data sources</h2>
+      <sympa-button colored raised ripple @click.native="next">Next</sympa-button>
+    </div>
   </div>
 </template>
 
@@ -31,6 +34,25 @@ export default {
 </script>
 
 <style scoped>
+.content {
+  padding: 16px;
+}
+
+h1, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
 header {
   display: none;
 }
@@ -38,6 +60,7 @@ header {
 header > div {
   padding-left: 16px;
 }
+
 .header-title {
   padding-left: 16px;
 }
@@ -47,9 +70,14 @@ header > div {
 }
 
 @media screen and (max-width: 960px) {
+  h1, h2 {
+    display: none;
+  }
+
   header {
     display: block;
   }
+
   .datasources-new {
     z-index: 4;
     position: fixed;
@@ -57,6 +85,12 @@ header > div {
     bottom: 0;
     left: 0;
     right: 0;
+    overflow: auto;
+  }
+
+  .content {
+    box-sizing: border-box;
+    max-height: calc(100vh - 56px);
     overflow: auto;
   }
 }
