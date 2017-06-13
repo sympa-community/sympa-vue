@@ -57,7 +57,7 @@ body {
 }
 
 .page-title {
-  margin: 15px 8px 0 8px;
+  margin: 15px 8px 8px 8px;
   font-size: 14px;
   line-height: 20px;
   font-weight: bold;
@@ -66,6 +66,7 @@ body {
 
 .page-list {
   margin: 0;
+  padding-top: 0;
   padding-bottom: 0;
   border-bottom: 3px solid #d8d8d8;
 }
@@ -75,6 +76,10 @@ body {
   background-color: #fff;
   border-top: 1px solid #d8d8d8;
   overflow: visible;
+}
+
+.page-list > li:hover {
+  background-color: #e3e3e3;
 }
 
 .txt-error {

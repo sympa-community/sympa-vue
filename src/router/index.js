@@ -87,32 +87,33 @@ export default new Router({
     },
   }, {
     path: '/listmaster/datasources',
-    name: 'listmasterDatasources',
     components: {
       default: ListmasterDatasources,
       header: ListmasterHeader,
       datasources: ListmasterDatasourcesSettings,
     },
-    meta: {
-      title: 'Listmaster Admin',
-    },
-    props: {
-      default: {
-        content: false,
-      },
-    },
     children: [
       {
         path: '',
+        name: 'listmasterDatasources',
         component: ListmasterDatasourcesSettings,
+        meta: {
+          title: 'Listmaster Admin',
+        },
       },
       {
         path: 'new',
         component: ListmasterDatasourcesNew,
+        meta: {
+          title: 'Listmaster Admin',
+        },
       },
       {
         path: 'settings',
         component: ListmasterDatasourcesSettings,
+        meta: {
+          title: 'Listmaster Admin',
+        },
       },
     ],
   }, {

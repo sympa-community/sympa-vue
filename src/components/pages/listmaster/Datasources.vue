@@ -90,7 +90,7 @@
             <span class="mdl-list__item-sub-title">12 moderators imported</span>
           </span>
           <span class="mdl-list__item-secondary-content">
-            <sympa-menu>
+            <sympa-menu top>
               <sympa-menu-item>View imported</sympa-menu-item>
               <sympa-menu-item>Edit</sympa-menu-item>
               <sympa-menu-item>Duplicate</sympa-menu-item>
@@ -108,7 +108,7 @@
             <span class="mdl-list__item-sub-title">12 moderators imported</span>
           </span>
           <span class="mdl-list__item-secondary-content">
-            <sympa-menu>
+            <sympa-menu top>
               <sympa-menu-item>View imported</sympa-menu-item>
               <sympa-menu-item>Edit</sympa-menu-item>
               <sympa-menu-item>Duplicate</sympa-menu-item>
@@ -129,7 +129,7 @@ export default {
   name: 'ListmasterDatasources',
   data() {
     return {
-      content: this.$route.matched[0].path !== '/listmaster/datasources',
+      content: !this.$route.path.match('^/listmaster/datasources/?$'),
       getClasses: this.classes,
     };
   },
@@ -143,7 +143,7 @@ export default {
   },
   watch: {
     $route() {
-      this.content = this.$route.path !== '/listmaster/datasources';
+      this.content = !this.$route.path.match('^/listmaster/datasources/?$');
       this.classes['with-content'] = this.content;
       this.classes['without-content'] = !this.content;
     },
@@ -177,7 +177,7 @@ export default {
   flex: 1;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 960px) {
   .datasources-menu {
     border-right: 1px solid #d8d8d8;
     width: 350px;
