@@ -20,43 +20,43 @@
 
       <h2 class="page-title">Members</h2>
       <ul class="mdl-list page-list">
-        <li class="mdl-list__item mdl-list__item--two-line">
+        <li class="mdl-list__item mdl-list__item--two-line" @click="edit">
           <span class="mdl-list__item-primary-content">
             <span>LDAP query <strong>students</strong></span>
             <span class="mdl-list__item-sub-title txt-error txt-bold">Errors in last sync</span>
           </span>
           <span class="mdl-list__item-secondary-content">
-            <sympa-menu>
+            <sympa-menu @click.native="stopPropagation">
               <sympa-menu-item>View imported</sympa-menu-item>
-              <sympa-menu-item>Edit</sympa-menu-item>
+              <sympa-menu-item @click.native="edit">Edit</sympa-menu-item>
               <sympa-menu-item>Duplicate</sympa-menu-item>
               <sympa-menu-item>Delete</sympa-menu-item>
             </sympa-menu>
           </span>
         </li>
-        <li class="mdl-list__item mdl-list__item--two-line">
+        <li class="mdl-list__item mdl-list__item--two-line" @click="edit">
           <span class="mdl-list__item-primary-content">
             <span>List inclusion <strong>example</strong></span>
             <span class="mdl-list__item-sub-title">32 members imported</span>
           </span>
           <span class="mdl-list__item-secondary-content">
-            <sympa-menu>
+            <sympa-menu @click.native="stopPropagation">
               <sympa-menu-item>View imported</sympa-menu-item>
-              <sympa-menu-item>Edit</sympa-menu-item>
+              <sympa-menu-item @click.native="edit">Edit</sympa-menu-item>
               <sympa-menu-item>Duplicate</sympa-menu-item>
               <sympa-menu-item>Delete</sympa-menu-item>
             </sympa-menu>
           </span>
         </li>
-        <li class="mdl-list__item mdl-list__item--two-line">
+        <li class="mdl-list__item mdl-list__item--two-line" @click="edit">
           <span class="mdl-list__item-primary-content">
             <span>Manual subscriptions</span>
             <span class="mdl-list__item-sub-title">5 members manually subscribed</span>
           </span>
           <span class="mdl-list__item-secondary-content">
-            <sympa-menu>
+            <sympa-menu @click.native="stopPropagation">
               <sympa-menu-item>View imported</sympa-menu-item>
-              <sympa-menu-item>Edit</sympa-menu-item>
+              <sympa-menu-item @click.native="edit">Edit</sympa-menu-item>
               <sympa-menu-item>Duplicate</sympa-menu-item>
               <sympa-menu-item>Delete</sympa-menu-item>
             </sympa-menu>
@@ -66,15 +66,15 @@
 
       <h2 class="page-title">Owners</h2>
       <ul class="mdl-list page-list">
-        <li class="mdl-list__item mdl-list__item--two-line">
+        <li class="mdl-list__item mdl-list__item--two-line" @click="edit">
           <span class="mdl-list__item-primary-content">
             <span>Manual</span>
             <span class="mdl-list__item-sub-title">2 owners specified</span>
           </span>
           <span class="mdl-list__item-secondary-content">
-            <sympa-menu>
+            <sympa-menu @click.native="stopPropagation">
               <sympa-menu-item>View imported</sympa-menu-item>
-              <sympa-menu-item>Edit</sympa-menu-item>
+              <sympa-menu-item @click.native="edit">Edit</sympa-menu-item>
               <sympa-menu-item>Duplicate</sympa-menu-item>
               <sympa-menu-item>Delete</sympa-menu-item>
             </sympa-menu>
@@ -84,15 +84,15 @@
 
       <h2 class="page-title">Moderators</h2>
       <ul class="mdl-list page-list">
-        <li class="mdl-list__item mdl-list__item--two-line">
+        <li class="mdl-list__item mdl-list__item--two-line" @click="edit">
           <span class="mdl-list__item-primary-content">
             <span>MySQL query <strong>test</strong></span>
             <span class="mdl-list__item-sub-title">12 moderators imported</span>
           </span>
           <span class="mdl-list__item-secondary-content">
-            <sympa-menu top>
+            <sympa-menu top @click.native="stopPropagation">
               <sympa-menu-item>View imported</sympa-menu-item>
-              <sympa-menu-item>Edit</sympa-menu-item>
+              <sympa-menu-item @click.native="edit">Edit</sympa-menu-item>
               <sympa-menu-item>Duplicate</sympa-menu-item>
               <sympa-menu-item>Delete</sympa-menu-item>
             </sympa-menu>
@@ -101,16 +101,16 @@
       </ul>
 
       <h2 class="page-title">Custom attributes</h2>
-      <ul class="mdl-list page-list">
+      <ul class="mdl-list page-list" @click="edit">
         <li class="mdl-list__item mdl-list__item--two-line">
           <span class="mdl-list__item-primary-content">
             <span>MySQL query <strong>test</strong></span>
             <span class="mdl-list__item-sub-title">12 moderators imported</span>
           </span>
           <span class="mdl-list__item-secondary-content">
-            <sympa-menu top>
+            <sympa-menu top @click.native="stopPropagation">
               <sympa-menu-item>View imported</sympa-menu-item>
-              <sympa-menu-item>Edit</sympa-menu-item>
+              <sympa-menu-item @click.native="edit">Edit</sympa-menu-item>
               <sympa-menu-item>Duplicate</sympa-menu-item>
               <sympa-menu-item>Delete</sympa-menu-item>
             </sympa-menu>
@@ -139,6 +139,16 @@ export default {
         'with-content': this.content,
         'without-content': !this.content,
       };
+    },
+  },
+  methods: {
+    edit() {
+      this.$router.push({
+        name: 'listmasterDatasourcesEdit',
+      });
+    },
+    stopPropagation(e) {
+      e.stopPropagation();
     },
   },
   watch: {

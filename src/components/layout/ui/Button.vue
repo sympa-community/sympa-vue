@@ -21,6 +21,7 @@ export default {
       classes: {
         'mdl-button--colored': this.colored,
         'mdl-button--primary': this.primary,
+        'mdl-button--raised': this.raised,
         'mdl-js-ripple-effect': this.ripple,
         'mdl-button--icon': this.iconOnly,
       },

@@ -21,6 +21,7 @@ import Listmaster from '@/components/pages/listmaster/Summary.vue';
 import ListmasterDatasources from '@/components/pages/listmaster/Datasources.vue';
 // listmaster/datasources
 import ListmasterDatasourcesNew from '@/components/pages/listmaster/datasources/New.vue';
+import ListmasterDatasourcesEdit from '@/components/pages/listmaster/datasources/Edit.vue';
 import ListmasterDatasourcesSettings from '@/components/pages/listmaster/datasources/Settings.vue';
 
 Vue.use(Router);
@@ -103,13 +104,23 @@ export default new Router({
       },
       {
         path: 'new',
+        name: 'listmasterDatasourcesNew',
         component: ListmasterDatasourcesNew,
         meta: {
           title: 'Listmaster Admin',
         },
       },
       {
+        path: 'edit',
+        name: 'listmasterDatasourcesEdit',
+        component: ListmasterDatasourcesEdit,
+        meta: {
+          title: 'Listmaster Admin',
+        },
+      },
+      {
         path: 'settings',
+        name: 'listmasterDatasourcesSettings',
         component: ListmasterDatasourcesSettings,
         meta: {
           title: 'Listmaster Admin',
