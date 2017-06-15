@@ -12,6 +12,8 @@
       <h1>Edit SQL Query <strong>test</strong></h1>
       <h2>Include list members from SQL Query</h2>
 
+      {{ posted }}
+
       <sympa-input label="Short name for this source"></sympa-input>
 
       <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
@@ -42,6 +44,13 @@
 
 <script>
 export default {
+  data() {
+    const posted = JSON.parse(window.sessionStorage.getItem('ds-new-results'));
+    window.sessionStorage.removeItem('ds-new-results');
+    return {
+      posted,
+    };
+  },
   methods: {
     save() {
       // do some stuff here to save datas
