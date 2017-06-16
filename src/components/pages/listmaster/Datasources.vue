@@ -126,7 +126,7 @@
 
 <script>
 export default {
-  name: 'ListmasterDatasources',
+  name: 'listmaster-datasources',
   data() {
     return {
       content: !this.$route.path.match('^/listmaster/datasources/?$'),

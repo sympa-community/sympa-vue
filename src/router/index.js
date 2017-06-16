@@ -18,6 +18,7 @@ import Discussions from '@/components/pages/discussions/Favorites.vue';
 import DiscussionsSubscribed from '@/components/pages/discussions/Subscribed.vue';
 // listmaster
 import Listmaster from '@/components/pages/listmaster/Summary.vue';
+import ListmasterMembers from '@/components/pages/listmaster/Members.vue';
 import ListmasterDatasources from '@/components/pages/listmaster/Datasources.vue';
 // listmaster/datasources
 import ListmasterDatasourcesNew from '@/components/pages/listmaster/datasources/New.vue';
@@ -81,6 +82,16 @@ export default new Router({
     name: 'listmaster',
     components: {
       default: Listmaster,
+      header: ListmasterHeader,
+    },
+    meta: {
+      title: 'Listmaster Admin',
+    },
+  }, {
+    path: '/listmaster/members',
+    name: 'listmasterMembers',
+    components: {
+      default: ListmasterMembers,
       header: ListmasterHeader,
     },
     meta: {

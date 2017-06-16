@@ -16,7 +16,7 @@
       <router-link exact :to="{name: 'listmaster'}" active-class="is-active" class="mdl-layout__tab">
         Summary
       </router-link>
-      <router-link exact :to="{name: 'listmaster'}" active-class="is-active" class="mdl-layout__tab">
+      <router-link exact :to="{name: 'listmasterMembers'}" active-class="is-active" class="mdl-layout__tab">
         Members
       </router-link>
       <router-link exact :to="{name: 'listmaster'}" active-class="is-active" class="mdl-layout__tab">
