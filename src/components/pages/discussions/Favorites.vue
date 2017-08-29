@@ -2,7 +2,9 @@
   <div class="discussions">
     <grid-title>Groupe de discussions</grid-title>
     <grid-list>
-      <grid-item></grid-item>
+      <router-link :to="{ name: 'discussionsList' }">
+        <grid-item></grid-item>
+      </router-link>
       <grid-item></grid-item>
       <grid-item></grid-item>
       <grid-item></grid-item>

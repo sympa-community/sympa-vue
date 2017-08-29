@@ -16,6 +16,7 @@ import Settings from '@/components/pages/Settings.vue';
 // dicussions
 import Discussions from '@/components/pages/discussions/Favorites.vue';
 import DiscussionsSubscribed from '@/components/pages/discussions/Subscribed.vue';
+import DiscussionsList from '@/components/pages/discussions/List.vue';
 // listmaster
 import Listmaster from '@/components/pages/listmaster/Summary.vue';
 import ListmasterMembers from '@/components/pages/listmaster/Members.vue';
@@ -72,6 +73,16 @@ export default new Router({
     name: 'discussionsSubscribed',
     components: {
       default: DiscussionsSubscribed,
+      header: DiscussionsHeader,
+    },
+    meta: {
+      title: 'Discussions',
+    },
+  }, {
+    path: '/discussions/list',
+    name: 'discussionsList',
+    components: {
+      default: DiscussionsList,
       header: DiscussionsHeader,
     },
     meta: {
