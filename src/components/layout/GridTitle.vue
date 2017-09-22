@@ -14,7 +14,6 @@ export default {
 .grid-title {
   font-size: 34px;
   font-weight: 400;
-  margin-top: 60px;
 }
 .grid-title:after {
   display: block;

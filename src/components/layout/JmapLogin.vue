@@ -1,28 +1,28 @@
 <template>
   <form @submit.top.prevent="login" novalidate>
-    <md-card>
-      <md-card-header>
-        <div class="md-title">Login</div>
-      </md-card-header>
-      <md-card-content>
-        <md-input-container>
-          <label>Authentication endpoint</label>
-          <md-input v-model="endpoint" :disabled="pending" />
-        </md-input-container>
-        <md-input-container>
-          <label>Username / Email</label>
-          <md-input type="email" v-model="username" :disabled="pending" />
-        </md-input-container>
-        <md-input-container md-has-password :class="{ 'md-input-invalid': errored }">
-          <label>Password</label>
-          <md-input type="password" v-model="password" :disabled="pending" />
-        </md-input-container>
-        <span v-if="errored" class="md-error">{{ errorMessage  }}</span>
-      </md-card-content>
-      <md-card-actions>
-        <md-button type="submit" class="md-primary" :disabled="pending">Login</md-button>
-      </md-card-actions>
-    </md-card>
+    <div class="mdl-card">
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">Login</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" id="jmap_endpoint" :disabled="pending" v-model="endpoint">
+          <label class="mdl-textfield__label" for="jmap_endpoint">Authentication endpoint</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" id="jmap_username" :disabled="pending" v-model="username">
+          <label class="mdl-textfield__label" for="jmap_username">Username / Email</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="password" id="jmap_password" :disabled="pending" v-model="password">
+          <label class="mdl-textfield__label" for="jmap_password">Password</label>
+        </div>
+        <span v-if="errored" class="md-error">{{ errorMessage }}</span>
+      </div>
+      <div class="mdl-card__actions">
+        <button class="mdl-button mdl-js-button mdl-button--primary" type="submit" :disabled="pending">Login</button>
+      </div>
+    </div>
   </form>
 </template>
 
